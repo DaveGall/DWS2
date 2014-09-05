@@ -180,6 +180,6 @@ a[title=duke] {
         width: 93.75%; /*100px*/
         padding: 2.5%; /*5px*/
         margin: 5%; /*10px*/
-        clear: right;
+        clear: both;
     }
 }
