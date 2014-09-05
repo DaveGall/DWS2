@@ -177,12 +177,12 @@ a[title=duke] {
         clear: right;*/
     }
     #gallery {
-        width: 100%; /*100px*/
+        width: 93.75%; /*100px*/
         /*padding: 2.5%; 5px
         margin: 5%; 10px
         clear: both;*/
     }
     #sidebar {
-        width: 100%;
+        width: 93.75%;
     }
 }
