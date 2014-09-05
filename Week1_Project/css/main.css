@@ -163,26 +163,26 @@ a[title=duke] {
     }
 }
 /* Media query for mobile phone. The display will become verticle dropping the gallery and sidebar below the content.*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
     #wrapper #footer {
         width: 100%;
     }
     #header #navigation {
-        width: 93.75%; /*300px*/
+        width: 90%; /*300px*/
     }
     #content {
-        width: 93.75%; /*300px*/
-        margin: 2%; /*6px*/
+        width: 90%; /*300px*/
+        margin: 4%; /*6px*/
 
     }
     #gallery  {
-        width: 93.75%; /*300px*/
-        margin: 2%; /*6px*/
+        width: 90%; /*300px*/
+        margin: 4%; /*6px*/
 
     }
     #sidebar {
-        width: 93.75%; /* 300px */
-        margin: 2%; /*6px*/
+        width: 90%; /* 300px */
+        margin: 4%; /*6px*/
     }
 
 }
