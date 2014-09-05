@@ -171,15 +171,14 @@ a[title=duke] {
         width: 93.75%; /*300px*/
     }
     #content {
-        width: 62.5%; /*200px*/
+        width: 93.75%; /*200px*/
         padding: 2.5%; /*5px*/
         margin: 5%; /*10px*/
     }
     #gallery #sidebar {
-        width: 33.333333%; /*100px*/
+        width: 93.75%; /*100px*/
         padding: 5%; /*5px*/
         margin: 10%; /*10px*/
         float: left;
-        clear: right;
     }
 }
