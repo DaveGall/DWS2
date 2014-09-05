@@ -162,7 +162,7 @@ a[title=duke] {
         margin: 4.62963%; /*10px;*/
     }
 }
-/* Media query for mobile phone */
+/* Media query for mobile phone. The display will become verticle dropping the gallery and sidebar below the content.*/
 @media screen and (max-width: 320px) {
     #wrapper #footer {
         width: 100%;
@@ -171,18 +171,18 @@ a[title=duke] {
         width: 93.75%; /*300px*/
     }
     #content {
-        width: 93.75%; /*200px*/
-        margin: 2%; /*10px*/
+        width: 93.75%; /*300px*/
+        margin: 2%; /*6px*/
 
     }
     #gallery  {
-        width: 93.75%; /*100px*/
-        margin: 2%; /*10px*/
+        width: 93.75%; /*300px*/
+        margin: 2%; /*6px*/
 
     }
     #sidebar {
-        width: 93.75%;
-        margin: 2%;
+        width: 93.75%; /* 300px */
+        margin: 2%; /*6px*/
     }
 
 }
