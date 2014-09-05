@@ -176,10 +176,14 @@ a[title=duke] {
         margin: 5%; /*10px*/
 
     }
-    #gallery #sidebar {
+    #gallery  {
         width: 93.75%; /*100px*/
         margin: 5%; /*10px*/
 
     }
-    
+    #sidebar {
+        width: 93.75%;
+        margin: 5%;
+    }
+
 }
