@@ -179,5 +179,7 @@ a[title=duke] {
         width: 33.333333%; /*100px*/
         padding: 5%; /*5px*/
         margin: 10%; /*10px*/
+        float: right;
+        clear: left;
     }
 }
