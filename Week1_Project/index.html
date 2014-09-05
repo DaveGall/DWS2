@@ -2,8 +2,9 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
-    <title>My Week 1 Website</title>
+    <title>Dobermans are not Evil</title>
 </head>
 <body>
 
@@ -13,19 +14,19 @@
         <h1>Dobermans are as Gentle as a Butterfly</h1>
         <div id="navigation">
             <ul>
-                <li><a href="#">First Link</a></li>
-                <li><a href="#">Second Link</a></li>
-                <li><a href="#">Third Link</a></li>
-                <li><a href="#">Fourth Link</a></li>
+                <li><a href="http://davidsgall.com">Home</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#sidebar">Video</a></li>
+                <li><a href="#gallery">Gallery</a></li>
             </ul>
         </div>
     </div>
     <!-- Content Area -->
     <div id="content">
         <h1>A Bad Rap</h1>
-        <figure id="text">
-            <a href="images/Duke%20in%20text_large.jpg"><img src="images/Duke%20in%20text.jpg" alt="Duke looking around"/> </a>
-        </figure>
+        <div id="intext">
+            <a href="images/Duke%20in%20text_large.jpg" title="duke"><img src="images/Duke%20in%20text.jpg" alt="Duke looking around"/> </a>
+        </div>
         <article>
             <p>Dobermans are given a bad rap when it comes to animals and violent acts. The news loves to victimize when it
             reports on incidents that are "news worthy." We have had Duke since he was six months old and he has been the
@@ -49,7 +50,7 @@
 
             <p>Just as with roses Dobermans were selectively bred to gain the desired qualities of their owners. So to get for instance a "King Doberman"
             all they did was take a normal doberman that was abnormally large and breed them with another abnormally large Doberman. Thus eventually achieving
-            the desired outcome of a larger (more intimidating) Doberman.</p>
+            the desired outcome of a larger (more intimidating) Doberman. So after a period of time we end up with a more docile breed of Doberman. </p>
             <p>It follows along the lines of the Russian experiment with wild Foxes. The idea was to see if they could domesticate a wild fox (these things were mean)
             through selective breeding. They captured a few wild Foxes and started breeding them, out of each litter the researchers took out the most docile
             offspring and bred them together. They continued this pattern over the years (50 years to be exact) and were able to effectively change the behavior
@@ -61,7 +62,8 @@
             <p>We could talk about breeding all we want and how it has effectively changed the Doberman, Pitbul and other "aggressive" dog breeds. What we can't
             change is one; peoples complete lack of wanting to educate themselves and two; the fact that there are folks out there in this world that do use
             certain breeds of dogs for exactly what we are trying to stop. Part of a dogs state of being comes from the owner themselves and some people just don't
-            get that. If you abuse your pet they will become aggressive, if you neglect your pet they will become distraught, a mistreated animal is very
+            get that.</p>
+            <p>If you abuse your pet they will become aggressive, if you neglect your pet they will become distraught, a mistreated animal is very
             dangerous and these are the ones you see on the news all the time. The dogs that have been abused or are trained to be aggressive, which mind you
             is not the majority are getting all the attention.</p>
 
@@ -84,10 +86,12 @@
     <!-- Sidebar Area -->
     <div id="sidebar">
         <h3>Dobermans are Gentle</h3>
-        <video width="250" height="250" controls>
-            <source src="Natally_Feeding_Duke_web.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+            <div id="video">
+               <video controls>
+                 <source src="Natally_Feeding_Duke_web.mp4" type="video/mp4">
+                 Your browser does not support the video tag.
+               </video>
+            </div>
         <p>As you can see from the video Dobermans are no more dangerous than your local butterfly. These two
         are buddies and one just figured out that the other likes treats.</p>
 
