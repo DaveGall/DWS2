@@ -140,7 +140,28 @@ td {
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+        .wrapper {
+            width: 100%;
+            overflow: auto;
+            margin: auto;
+        }
+        .header, #one-column, #footer {
+            width: 97.914494%;
+        }
+        .first-column, .second-column, .third-column {
+            width: 29.19708%;
+            margin: 1.042753%;
+
+        }
+        #sidebar {
+            width: 29.19708%;
+            margin:  4.171011% 1.042753%;
+        }
+        table {
+            width: 100%;
+        }
+    }
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
@@ -149,10 +170,42 @@ td {
 	@media only screen and (max-width: 767px) {}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        .wrapper {
+            width: 100%;
+        }
+        .header, #one-column, #footer {
+            width: 97.001304%;
+        }
+        .first-column, .second-column, .third-column {
+            width: 97.001304%;
+            float: left;
+            clear: both;
+        }
+        table {
+            width: 100%;
+            float: left;
+            clear: right;
+        }
+        #sidebar {
+            width: 32.333768%;
+        }
+    }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+        .wrapper {
+            width: 100%;
+        }
+        .header, .first-column, .second-column, .third-column, .my-column {
+            width: 95.824635%;
+            margin: 2.1%;
+        }
+        #one-column, #footer, #sidebar {
+            width: 95.824635%;
+            margin: 2.1%;
+        }
+    }
 
 
 /* #Font-Face
