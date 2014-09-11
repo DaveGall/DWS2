@@ -3,8 +3,11 @@
 body {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: #ffe8ea;/*#fcdaff;*/
+    background-color: #fdf3f4;/*#ffe8ea;#fcdaff;*/
 
+}
+h1, h2, h4 {
+    font-weight: normal;
 }
 .indent p {
     text-indent: 1.5em;
@@ -12,10 +15,18 @@ body {
 /* Styling for the jumbotron */
 .jumbotron {
     background-color: #ffd1d5;
+    box-shadow: .2em .2em .6em #9999a2;
 }
-.jumbotron p, .jumbotron h1 {
-    color: #ffffff;
+.jumbotron p {
+    font-style: italic;
 }
+.jumbotron h1 {
+    font-weight: normal;
+}
+.shadow {
+    box-shadow: .2em .2em .6em #9999a2;
+}
+
  /* Styling for the aside */
 .glyphicon {
     padding-right: 1em;
@@ -23,14 +34,18 @@ body {
 aside a button {
     margin-bottom: 1em;
 }
-.yellow, .submit{
+.yellow, .submit {
     background-color: #97353e;/* #c8cc9a;*/
     border-color: #e36672;/*#f4ffda;*/
+    box-shadow: .2em .2em .2em #9999a2;
 }
 .pad {    /* Styling to offset the glyphs so they don't ride so close */
     margin-top: 1em;
 }
 /* Article styling section */
+.thumbnail {
+    box-shadow: .2em .2em .6em #9999a2;
+}
 article {
     margin-top: 2em;
 }
@@ -50,6 +65,7 @@ article > p {
     margin-bottom: 2em;
 }
 /* Form styling*/
+
 .form {
     margin-top: 1.5em;
 }
@@ -84,7 +100,9 @@ article > p {
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
     background-color: #ffffff;
+}
 /* Footer Styling */
 footer {
     border-top: .10em solid #000000;
 }
+/* Media Queries */
