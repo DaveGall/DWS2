@@ -1,33 +1,53 @@
 /* Added CSS */
-
+/* Main body styling*/
 body {
     padding-top: 70px;
     padding-bottom: 70px;
+    background-color: #ffe8ea;/*#fcdaff;*/
+
 }
 .indent p {
     text-indent: 1.5em;
 }
-
-
+/* Styling for the jumbotron */
+.jumbotron {
+    background-color: #ffd1d5;
+}
+.jumbotron p, .jumbotron h1 {
+    color: #ffffff;
+}
+ /* Styling for the aside */
 .glyphicon {
     padding-right: 1em;
 }
 aside a button {
     margin-bottom: 1em;
 }
-.pad {
+.yellow, .submit{
+    background-color: #97353e;/* #c8cc9a;*/
+    border-color: #e36672;/*#f4ffda;*/
+}
+.pad {    /* Styling to offset the glyphs so they don't ride so close */
     margin-top: 1em;
 }
+/* Article styling section */
 article {
     margin-top: 2em;
 }
-.butt {
+article > p {
+    font-style: italic;
+}
+.butt { /* Styling to put the submit button on the right */
     float: right;
     margin-top: 2em;
 }
 
 .two {
     margin-top: 2em;
+}
+
+.col-lg-3 {
+    margin-bottom: 2em;
 }
 /* Form styling*/
 .form {
@@ -55,4 +75,16 @@ article {
 /* Table Styling */
 .table {
     margin-top: 20px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: #f4c2c7;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+    background-color: #ffffff;
+/* Footer Styling */
+footer {
+    border-top: .10em solid #000000;
 }
