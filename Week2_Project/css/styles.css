@@ -106,3 +106,8 @@ footer {
     border-top: .10em solid #000000;
 }
 /* Media Queries */
+@media screen and (max-width: 480px) {
+    form {
+        padding-bottom: 2em;
+    }
+}
