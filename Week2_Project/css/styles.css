@@ -4,6 +4,11 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+.indent p {
+    text-indent: 1.5em;
+}
+
+
 .glyphicon {
     padding-right: 1em;
 }
@@ -20,12 +25,18 @@ article {
     float: right;
     margin-top: 2em;
 }
-.form-group {
-    margin-top: 2em;
-}
+
 .two {
     margin-top: 2em;
 }
+/* Form styling*/
+.form {
+    margin-top: 1.5em;
+}
+.form-group {
+    margin-top: 2em;
+}
+
 #check {
     float: left;
 }
@@ -41,6 +52,7 @@ article {
     float: left;
     clear: right;
 }
+/* Table Styling */
 .table {
     margin-top: 20px;
 }
