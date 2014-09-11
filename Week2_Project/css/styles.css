@@ -4,3 +4,43 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+.glyphicon {
+    padding-right: 1em;
+}
+aside a button {
+    margin-bottom: 1em;
+}
+.pad {
+    margin-top: 1em;
+}
+article {
+    margin-top: 2em;
+}
+.butt {
+    float: right;
+    margin-top: 2em;
+}
+.form-group {
+    margin-top: 2em;
+}
+.two {
+    margin-top: 2em;
+}
+#check {
+    float: left;
+}
+.check, .receive {
+    margin-left: 2em;
+}
+.submit {
+    margin-top: 1em;
+    float: right;
+}
+
+#receive {
+    float: left;
+    clear: right;
+}
+.table {
+    margin-top: 20px;
+}
