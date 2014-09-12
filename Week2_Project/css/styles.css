@@ -1,8 +1,9 @@
 /* Added CSS */
 /* Main body styling*/
 body {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    width: 100%;
+    padding-top: 6.25%; /*70px;*/
+    padding-bottom:6.25%; /*70px;*/
     background-color: #fdf3f4;/*#ffe8ea;#fcdaff;*/
 
 }
@@ -11,6 +12,9 @@ h1, h2, h4 {
 }
 .indent p {
     text-indent: 1.5em;
+}
+button a {
+    color: #ffffff;
 }
 /* Styling for the jumbotron */
 .jumbotron {
@@ -28,6 +32,14 @@ h1, h2, h4 {
 }
 
  /* Styling for the aside */
+.margin-gallery {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.change {
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
 .glyphicon {
     padding-right: 1em;
 }
@@ -70,7 +82,7 @@ article > p {
     margin-top: 1.5em;
 }
 .form-group {
-    margin-top: 2em;
+    margin-top: .5em;
 }
 
 #check {
@@ -90,7 +102,7 @@ article > p {
 }
 /* Table Styling */
 .table {
-    margin-top: 20px;
+    margin-top: 5em;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td,
@@ -105,9 +117,75 @@ article > p {
 footer {
     border-top: .10em solid #000000;
 }
+footer ul li {
+    display: inline-block;
+    padding-top: 1em;
+    padding-left: 4em;
+}
+footer ul {
+    text-align: center;
+}
 /* Media Queries */
-@media screen and (max-width: 480px) {
-    form {
-        padding-bottom: 2em;
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    .margin {
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    footer ul li {
+        display: inline-block;
+        padding-left: 1em;
+    }
+    h2, h4 {
+        text-align: center;
+    }
+    body {
+        background-color: #c5ff73;
+    }
+    .yellow, .submit {
+        background-color: #4645ff;/* #c8cc9a;*/
+        border-color: #1817ff;/*#f4ffda;*/
+        box-shadow: .2em .2em .2em #9999a2;
+    }
+    .jumbotron {
+        background-color: #f6ffbe;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    .two {
+        margin-top: 2em;
+    }
+    footer ul {
+        padding-left: 1em;
+    }
+    body {
+        background-color: #b9def0;
+    }
+    .yellow, .submit {
+        background-color: #1aff5c;/* #c8cc9a;*/
+        border-color: #27bf53;/*#f4ffda;*/
+        box-shadow: .2em .2em .2em #9999a2;
+        color: #000000;
+    }
+    .jumbotron {
+        background-color: #eedeff;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: #e5e8e0;
+    }
+    .yellow, .submit {
+        background-color: #846600;/* #c8cc9a;*/
+        border-color: #ffcc1a;/*#f4ffda;*/
+        box-shadow: .2em .2em .2em #9999a2;
+    }
+    .jumbotron {
+        background-color: #efffa3;
     }
 }
+
+
