@@ -1,5 +1,5 @@
 /*Forms homework*/
-
+/* main section of CSS styling the form and four main blocks*/
 body {
     background: linear-gradient(to right, #58E1FF 0%, #4FCBE5 53%, #42A9BF 100%);
 }
@@ -40,11 +40,25 @@ form * {
     border-left: 1px solid #000000;
     border-bottom: 1px solid #000000;
     box-shadow: 1px 1px 1px #000000;
-    background: linear-gradient(to top,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+    /*background: linear-gradient(to top,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+    background-color: #31b0d5;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -ms-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
     position: absolute;
     top: 3.125%; /*top: 30px;*/
     left: 54.166667%; /*left: 520px;*/
     width: 45.833333%; /*width: 440px;*/
+}
+#two:hover {
+    background-color: #355DFF;
 }
 
 #three {
@@ -72,6 +86,8 @@ form * {
     clear: both;
     /*border-top: 1px solid #7db9e8;*/
 }
+/* Ends the Main CSS styling of the form and blocks */
+/* Styling headers and p's*/
 h3, h2 {
     color: #ffffff;
     text-align: center;
@@ -79,6 +95,7 @@ h3, h2 {
 p {
     color: #ffffff;
 }
+/* Styling the labels and input areas of the form */
 label {
     color: #ffffff;
     display: block;
@@ -94,21 +111,13 @@ label {
     box-shadow: inset 2px 2px 2px #7db9e8;
     border-radius: 5px;
 }
-/*input[type=date] {
-    width: 100px;
-    background: #DFF1FF;
-    box-shadow: inset 2px 2px 2px #7db9e8;
-    border-radius: 5px;
-}*/
 
 #local {
     float: left;
 }
 #location {
     float: left;
-    /*margin-left: 31.818182%; margin-left: 140px;*/
     margin-top: 5px;
-
 }
 
 #state {
@@ -161,6 +170,22 @@ label {
     margin-top: 4.545455%; /*margin-top: 20px;*/
 }
 
+.inhabitants, .working, .householdsize {
+    display: inline;
+    margin-top: 10px;
+}
+#people {
+    margin-left: 2.272727%; /*margin-left: 10px;*/
+    margin-bottom: 10px;
+}
+#work {
+    margin-left: 5.454545%; /*margin-left: 24px;*/
+    margin-bottom: 10px;
+}
+#householdsize {
+    margin-left: 29.090909%; /*margin-left: 128px;*/
+}
+
 select {
     margin-top: 2.272727%; /*margin-top: 10px;*/
     border: 1px solid #355DFF;
@@ -189,11 +214,25 @@ input[placeholder] {
     padding-left: 10px;
 }
 
+/* End of the major portion of styling the labels and text areas */
+
+/* Styling the submit button */
 #submit {
     width: 20%;
     height: 2%;
     position: absolute;
-    background: linear-gradient(to bottom, #44E819 0%, #20E869 50%, #8FFF9A 100%);
+    /*background: linear-gradient(to bottom, #44E819 0%, #20E869 50%, #8FFF9A 100%);*/
+    background-color: #20E869;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -ms-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
     border: 1px solid #55E829;
     border-radius: 8px;
     top: 95%;
@@ -203,10 +242,11 @@ input[placeholder] {
 
 }
 #submit:hover {
-    background: linear-gradient(to top, #44E819 0%, #20E869 50%, #8FFF9A 100%);
+    /*background: linear-gradient(to top, #44E819 0%, #20E869 50%, #8FFF9A 100%);*/
+    background-color: #355DFF;
     cursor: pointer;
 }
-
+/* Styling of the table for the form */
 fieldset {
     display: block;
     border: transparent;
@@ -226,21 +266,6 @@ th, td {
     color: #ffffff;
 }
 
-.inhabitants, .working, .householdsize {
-    display: inline;
-    margin-top: 10px;
-}
-#people {
-    margin-left: 2.272727%; /*margin-left: 10px;*/
-    margin-bottom: 10px;
-}
-#work {
-    margin-left: 5.454545%; /*margin-left: 24px;*/
-    margin-bottom: 10px;
-}
-#householdsize {
-    margin-left: 29.090909%; /*margin-left: 128px;*/
-}
 .refer {
     /*position: absolute;*/
     width: 75%;
@@ -262,8 +287,14 @@ textarea {
 .comments:focus {
     background: #C8F3FF;
 }
+/* End table styling */
+
+/* End main CSS styling*/
+
+
 
 /* Media Queries */
+
 @media screen and (min-width: 991px) and (max-width: 2000px) {
     .inhabitants, .working, .householdsize, #people, #work, #householdsize, #income {
         display: block;
@@ -366,13 +397,25 @@ textarea {
         border-left: 1px solid #000000;
         border-bottom: 1px solid #000000;
         box-shadow: 1px 1px 1px #000000;
-        background: linear-gradient(to top,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+        background-color: #31b0d5;
+        -webkit-transition-property: background;
+        -moz-transition-property: background;
+        -ms-transition-property: background;
+        -o-transition-property: background;
+        transition-property: background;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
         position: absolute;
         top: 28%; /*top: 30px; 3.125%*/
         left: 5%; /*left: 520px; 54.166667%*/
         width: 90%; /*45.833333%; 440px;*/
     }
-
+#two:hover {
+    background-color: #355DFF;
+}
     #three {
         position: absolute;
         width: 90%; /*45.833333%;*/
@@ -410,13 +453,29 @@ textarea {
         width: 20%;
         height: 2%;
         position: absolute;
-        background: linear-gradient(to bottom, #44E819 0%, #20E869 50%, #8FFF9A 100%);
+        background-color: #20E869;
+        -webkit-transition-property: background;
+        -moz-transition-property: background;
+        -ms-transition-property: background;
+        -o-transition-property: background;
+        transition-property: background;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
         border: 1px solid #55E829;
         border-radius: 8px;
         top: 95%;
         left: 67%;
         margin: 10px;
         font-size: 1em;
+    }
+
+    #submit:hover {
+        /*background: linear-gradient(to top, #44E819 0%, #20E869 50%, #8FFF9A 100%);*/
+        background-color: #355DFF;
+        cursor: pointer;
     }
 
 }
@@ -457,11 +516,25 @@ textarea {
         border-left: 1px solid #000000;
         border-bottom: 1px solid #000000;
         box-shadow: 1px 1px 1px #000000;
-        background: linear-gradient(to top,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+        background-color: #31b0d5;
+        -webkit-transition-property: background;
+        -moz-transition-property: background;
+        -ms-transition-property: background;
+        -o-transition-property: background;
+        transition-property: background;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
         position: absolute;
         top: 28.5%; /*top: 30px; 3.125%*/
         left: 5%; /*left: 520px; 54.166667%*/
         width: 90%; /*45.833333%; 440px;*/
+    }
+
+    #two:hover {
+        background-color: #355DFF;
     }
 
     #three {
@@ -500,7 +573,17 @@ textarea {
         width: 20%;
         height: 2%;
         position: absolute;
-        background: linear-gradient(to bottom, #44E819 0%, #20E869 50%, #8FFF9A 100%);
+        background-color: #20E869;
+        -webkit-transition-property: background;
+        -moz-transition-property: background;
+        -ms-transition-property: background;
+        -o-transition-property: background;
+        transition-property: background;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
         border: 1px solid #55E829;
         border-radius: 8px;
         top: 97%;
@@ -509,49 +592,13 @@ textarea {
         font-size: 1em;
     }
 
+    #submit:hover {
+        /*background: linear-gradient(to top, #44E819 0%, #20E869 50%, #8FFF9A 100%);*/
+        background-color: #355DFF;
+        cursor: pointer;
+    }
 }
 
-/*@media screen and (max-width: 420px) {
-
-    #myForm {
-        position: relative;
-        border-radius: 20px;
-        width: 100%; /*width: 960px;
-        height: 1600px; height: 3000px;
-        margin: 50px auto;
-        background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
-        box-shadow: 2px 2px 10px #000;
-        overflow: hidden;
-    }
-
-    #three {
-        position: absolute;
-        width: 45.833333%;
-        top: 40%;
-        left: 0;
-    }
-    #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
-        display: block;
-        margin: 0; /*20px
-    }
-
-    .inhabitants, .working, .householdsize, #people, #work, #householdsize, #income {
-        display: block;
-        margin: 0;
-    }
-    #people, #work, #householdsize, #income {
-        margin-bottom: 5%;
-    }
-    .four {
-        position: absolute;
-        top: 70%; /*top: 780px;
-        left: 0;
-        width: 100%; /*width: 960px;
-        clear: both;
-
-    }
-
-}*/
 
 
 
