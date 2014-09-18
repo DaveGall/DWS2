@@ -1,19 +1,24 @@
 /*Forms homework*/
 /* main section of CSS styling the form and four main blocks*/
 body {
-    background: linear-gradient(to right, #58E1FF 0%, #4FCBE5 53%, #42A9BF 100%);
+    /*background: linear-gradient(to right, #58E1FF 0%, #4FCBE5 53%, #42A9BF 100%);*/
+
+    background: url("../img/Logo1.jpg") no-repeat bottom, #45a0ff;
+
+
+    background-size: 75% 50%;
 }
 
 #myForm {
     position: relative;
-    border-radius: 20px;
+    border-radius: 1.25em; /*20px;*/
     width: 65%; /*width: 960px;*/
     height: 1600px; /*height: 3000px;*/
-    margin: 50px auto;
+    margin: 4.166667% auto; /*40px;*/
     /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
-    background-color: #173D7F;
+    background-color: rgba(43, 47, 255, .6);
 
-    box-shadow: 2px 2px 10px #000;
+    box-shadow: .125em .125em .625em #000; /*2px 2px 10px*/
     overflow: hidden;
 }
 .radio #a {
@@ -25,18 +30,16 @@ form * {
 
 #one {
     position: absolute;
-    border-right: 1px solid #000000;
+    border-right: .063em solid #000000; /*1px*/
     /*border-bottom: 1px solid #000000;*/
-    padding-right: 15px;
-    padding-bottom: 15px;
-    box-shadow: 1px 1px 1px #000000;
-    /*background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);*/
+    padding-right: 1.8%; /*15px*/
+    padding-bottom: 1.8%;/*15px*/
+    box-shadow: .063em .063em .063em #000000; /*1px 1px 1px */
     background-color: #1e5799;
     float: left;
     width: 45.833333%; /*width: 440px;*/
     left: 0;
     top: 3.125%;/*top: 30px;*/
-    /*margin-right: 20px;*/
     -webkit-perspective: 500px;
     -moz-perspective: 500px;
     -o-perspective: 500px;
@@ -44,13 +47,9 @@ form * {
 }
 
 #two {
-    /*margin-left: 50px;
-    float: left;
-    clear: right;*/
-    border-left: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    box-shadow: 1px 1px 1px #000000;
-    /*background: linear-gradient(to top,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+    border-left: .063em solid #000000;/*1px=.063em*/
+    border-bottom: .063em solid #000000;
+    box-shadow: 063em .063em .063em #000000;/*1px*/
     background-color: #31b0d5;
     -webkit-transition-property: background;
     -moz-transition-property: background;
@@ -72,20 +71,17 @@ form * {
 }
 
 #three {
-    /*float: left;
-    clear: both;*/
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    padding-right: 15px;
-    margin-top: 10px;
-    /*background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);*/
+    border-right: .063em solid #000000;
+    border-bottom: .063em solid #000000;
+    padding-right: 1.8%;/*15px*/
+    margin-top: 1.2%;/*10px*/
     background-color: #1e5799;
-    box-shadow: 1px 1px 1px #000000;
+    box-shadow: .063em .063em .063em #000000; /*1px 1px 1px */
     position: absolute;
     top: 32.5%; /*top: 520px;*/
     left: 0;
     width: 45.833333%; /*width: 440px;*/
-    margin-bottom: 10px;
+    margin-bottom: 1.041667%;/*10px;*/
 
 }
 .four {
@@ -114,6 +110,9 @@ h2:hover {
     -o-transform: skew(20deg, 5deg);
     transform: skew(20deg, 5deg);
 }
+h3.ref {
+    margin-left: 25px;
+}
 h3 {
     color: #ffffff;
     text-align: left;
@@ -138,7 +137,20 @@ label {
     display: block;
     margin-top: 10px;
 }
-#name, #email, #datetime, #city, .state {
+.date, #date {
+    float: left;
+    clear: left;
+}
+.date {
+    margin-top: 20px;
+}
+#date {
+    background: #DFF1FF;
+    box-shadow: inset 2px 2px 2px #7db9e8;
+    border-radius: 5px;
+}
+
+#name, #email, #datetime, #city, .state, #date {
     margin: 5px 0 10px 0;
     display: block;
 }
@@ -261,11 +273,11 @@ input[type=text], input[type=email], input[type=number] {
     margin-bottom: 1.136364%; /*margin-bottom: 5px;*/
 }
 
-input[type=text]:hover, input[type=email]:hover, input[type=datetime]:hover, input[type=number]:hover, select:hover, #income:hover, input[type=radio]:hover {
+input[type=text]:hover, input[type=email]:hover, input[type=datetime]:hover, input[type=number]:hover, select:hover, #income:hover, input[type=radio]:hover, #date:hover {
     background: #FFFEBA;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=datetime]:focus, input[type=number]:focus, input[type=radio]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=datetime]:focus, input[type=number]:focus, input[type=radio]:focus, #date:focus {
     background: #C8F3FF;
 }
 
@@ -335,6 +347,9 @@ th, td {
     /*border-bottom: 1px solid #7db9e8;*/
     color: #ffffff;
 }
+.move {
+    padding-left: 6px;
+}
 
 .refer {
     /*position: absolute;*/
@@ -396,7 +411,8 @@ textarea {
         width: 100%; /*width: 960px;*/
         height: 1600px; /*height: 3000px;*/
         margin: 50px auto;
-        background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+        /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+        background-color: rgba(43, 47, 255, .6);
         box-shadow: 2px 2px 10px #000;
         overflow: hidden;
     }
@@ -434,6 +450,9 @@ textarea {
 }
 
 @media screen and (min-width:640px) and (max-width:1136px)/*(max-width: 768px)*/ {
+    body {
+        background-size: auto;
+    }
 
     #myForm {
         position: relative;
@@ -441,7 +460,8 @@ textarea {
         width: 100%; /*width: 960px;*/
         height: 2000px; /*height: 3000px;*/
         margin: 50px auto;
-        background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+        /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+        background-color: rgba(43, 47, 255, .6);
         box-shadow: 2px 2px 10px #000;
         overflow: hidden;
     }
@@ -453,7 +473,7 @@ textarea {
         padding-right: 15px;
         padding-bottom: 15px;
         box-shadow: 1px 1px 1px #000000;
-        background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);
+        background-color: #1e5799;
         float: left;
         width: 90%; /*45.833333%; 440px;*/
         left: 5%;
@@ -491,7 +511,7 @@ textarea {
     #three {
         position: absolute;
         width: 90%; /*45.833333%;*/
-        top: 53%;/*35%*/
+        top: 60%;/*35%*/
         left: 5%;
     }
     #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
@@ -508,7 +528,7 @@ textarea {
     }
     .four {
         position: absolute;
-        top: 71%; /*top: 780px; 54%*/
+        top: 78%; /*top: 780px; 54%*/
         left: 0;
         width: 120%; /*width: 960px;*/
         clear: both;
@@ -554,13 +574,18 @@ textarea {
 
 @media screen and (min-width: 320px) and (max-width: 639px) {
 
+    body {
+        background-size: 100% 35%;
+    }
+
     #myForm {
         position: relative;
         border-radius: 20px;
         width: 100%; /*width: 960px;*/
         height: 1860px; /*height: 3000px;*/
         margin: 50px auto;
-        background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+        /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+        background-color: rgba(43, 47, 255, .6);
         box-shadow: 2px 2px 10px #000;
         overflow: hidden;
     }
@@ -612,7 +637,7 @@ textarea {
     #three {
         position: absolute;
         width: 90%; /*45.833333%;*/
-        top: 58%;/*35%*/
+        top: 68%;/*35%*/
         left: 5%;
     }
     #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
@@ -629,7 +654,7 @@ textarea {
     }
     .four {
         position: absolute;
-        top: 74%; /*top: 780px;*/
+        top: 83%; /*top: 780px;*/
         left: 0;
         width: 100%; /*width: 960px;*/
         clear: both;
