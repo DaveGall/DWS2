@@ -96,10 +96,26 @@ form * {
 h2 {
     color: #ffffff;
     text-align: center;
-    -webkit-transition: all 4s ease;
-    -moz-transition: all 4s ease;
-    -o-transition: all 4s ease;
-    transtion: all 4s ease;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 4s;
+    -moz-transition-duration: 4s;
+    -ms-transition-duration: 4s;
+    -o-transition-duration: 4s;
+    transition-duration: 4s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
 }
 h2:hover {
     -webkit-transform: skew(20deg, 2deg);
@@ -113,10 +129,26 @@ h3.ref {
 h3 {
     color: #ffffff;
     text-align: left;
-    -webkit-transition: all 6s ease;
-    -moz-transition: all 6s ease;
-    -o-transition: all 6s ease;
-    transtion: all 6s ease;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 6s;
+    -moz-transition-duration: 6s;
+    -ms-transition-duration: 6s;
+    -o-transition-duration: 6s;
+    transition-duration: 6s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
 }
 
 h3:hover {

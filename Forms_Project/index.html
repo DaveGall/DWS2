@@ -8,8 +8,10 @@
 
 </head>
 <body>
+<!-- Begins the form -->
 <form id="myForm" action="http://www.example.com" method="post">
     <h2>Rental Application</h2>
+    <!-- First Block -->
 <div id="one">
     <fieldset>
         <h3>Primary Tenant</h3>
@@ -29,6 +31,7 @@
         <label for="city">City</label>
         <input type="text" name="city" id="city" tabindex="5" placeholder="City" required>
     </div>
+    <!-- begins a div for a state selector -->
     <div id="location">
         <label for="state" class="state" id="statelabel">State</label>
         <select name="state" id="state" class="state" tabindex="6">
@@ -86,9 +89,10 @@
     </fieldset>
     <fieldset id="centerfs">
         <h3 id="bd">D.O.B</h3>
+        <!-- Begins a div for selecting the year you were born -->
         <div class="yearpicker">
             <label for="year" class="year" id="pickyear">Year</label>
-            <select type="date" name="birthdate" id="year" tabindex="7">
+            <select name="birthdate" id="year" tabindex="7">
                 <option class="Year">Select</option>
                 <option value="1996">1996</option>
                 <option value="1995">1995</option>
@@ -139,6 +143,7 @@
                 <option value="1950">1950</option>
             </select>
         </div>
+        <!-- Begins a div for choosing the month you were born -->
         <div class="monthpicker">
             <label for="month" class="month" id="pickmonth">Month</label>
             <select name="month" id="month" class="month" tabindex="8">
@@ -157,6 +162,7 @@
                 <option value="12">12</option>
             </select>
         </div>
+        <!-- Begins a div for selecting the day you were born -->
         <div class="daypicker">
             <label for="day" class="day" id="pickday">Day</label>
             <select name="day" id="day" class="day" tabindex="9">
@@ -198,7 +204,7 @@
     <fieldset>
 
 
-
+<!-- Begins the right side questionnaire block -->
     </fieldset>
 </div>
 <div id="two">
@@ -297,17 +303,19 @@
         <input type="radio" class="radio" name="rate" id="n" value="N"/>
         <label for="n" class="radio">N</label>
 
+        <!-- This is my calendar, rolls up nice on mobile -->
+
         <label class="date" for="date">Move in Date</label>
-        <input id="date" type="date" name="date"placeholder="Date">
+        <input id="date" type="date" name="date"/>
 
     </fieldset>
 </div>
-
+<!-- Start of my second left hand block but third overall. Contains several selectors for different options. -->
 <div id="three">
     <fieldset>
         <h3>Household Size</h3>
         <label for="householdsize" class="householdsize">Total Number Living in House?</label>
-        <select type="number" name="householdsize" id="householdsize" class="householdsize" tabindex="10">
+        <select name="householdsize" id="householdsize" class="householdsize" tabindex="10">
             <option class="peeps">Bodies</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -344,6 +352,7 @@
 
     </fieldset>
 </div>
+    <!-- This is my fourth block that sits at the bottom of the others and is a section for references. -->
 <div class="four">
     <fieldset>
         <h3 class="ref">References</h3>
@@ -376,7 +385,7 @@
         </table>
     </fieldset>
 </div>
-
+<!-- This is my fixed submit button -->
     <input type="submit" name="submit" id="submit" value="Submit" tabindex="38">
 </form>
 
