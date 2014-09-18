@@ -236,9 +236,9 @@ th, td {
     margin-left: 29.090909%; /*margin-left: 128px;*/
 }
 .refer {
-    position: absolute;
+    /*position: absolute;*/
     width: 75%;
-    margin-left: 60px;
+    margin: 0 auto;/*margin-left: 60px;*/
     box-shadow: 2px 2px 2px #000000;
 }
 textarea {
@@ -272,6 +272,7 @@ textarea {
         left: 0;
         width: 100%; /*width: 960px;*/
         clear: both;
+        margin-top: 5%;
 
     }
 
@@ -303,6 +304,7 @@ textarea {
         left: 0;
         width: 100%; /*width: 960px;*/
         clear: both;
+        margin-top: 5%;
 
     }
     #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
@@ -328,18 +330,48 @@ textarea {
         position: relative;
         border-radius: 20px;
         width: 100%; /*width: 960px;*/
-        height: 1600px; /*height: 3000px;*/
+        height: 1800px; /*height: 3000px;*/
         margin: 50px auto;
         background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
         box-shadow: 2px 2px 10px #000;
         overflow: hidden;
     }
 
+    #one {
+        position: absolute;
+        border-right: 1px solid #000000;
+        /*border-bottom: 1px solid #000000;*/
+        padding-right: 15px;
+        padding-bottom: 15px;
+        box-shadow: 1px 1px 1px #000000;
+        background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);
+        float: left;
+        width: 45.833333%; /*width: 440px;*/
+        left: 25%;
+        top: 3.125%;/*top: 30px;*/
+        /*margin-right: 20px;*/
+    }
+
+    #two {
+        /*margin-left: 50px;
+        float: left;
+        clear: right;*/
+        margin: 0 auto;
+        border-left: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        box-shadow: 1px 1px 1px #000000;
+        background: linear-gradient(to top,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+        position: absolute;
+        top: 29%; /*top: 30px; 3.125%*/
+        left: 26%; /*left: 520px; 54.166667%*/
+        width: 45.833333%; /*width: 440px;*/
+    }
+
     #three {
         position: absolute;
         width: 45.833333%;
-        top: 30%;
-        left: 0;
+        top: 60.5%;/*35%*/
+        left: 25%;
     }
     #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
         display: block;
@@ -355,11 +387,17 @@ textarea {
     }
     .four {
         position: absolute;
-        top: 54%; /*top: 780px;*/
+        top: 75%; /*top: 780px; 54%*/
         left: 0;
-        width: 100%; /*width: 960px;*/
+        width: 120%; /*width: 960px;*/
         clear: both;
+        margin-top: 10%;
 
+    }
+    .refer {
+        width: 80%;
+        margin-left: 0;
+        box-shadow: 2px 2px 2px #000000;
     }
 
 }
@@ -402,6 +440,11 @@ textarea {
         width: 100%; /*width: 960px;*/
         clear: both;
 
+    }
+    .refer {
+        width: 90%;
+        margin-left: 4%;
+        box-shadow: 2px 2px 2px #000000;
     }
 
 }
