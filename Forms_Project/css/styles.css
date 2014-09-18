@@ -53,7 +53,7 @@ form * {
     left: 0;
     width: 100%; /*width: 960px;*/
     clear: both;
-    border-top: 1px solid #7db9e8;
+    /*border-top: 1px solid #7db9e8;*/
 }
 h3, h2 {
     color: #ffffff;
@@ -251,6 +251,14 @@ th, td {
     #people, #work, #householdsize, #income {
         margin-bottom: 5%;
     }
+    .four {
+        position: absolute;
+        top: 50%; /*top: 780px;*/
+        left: 0;
+        width: 100%; /*width: 960px;*/
+        clear: both;
+
+    }
 
 
 }
@@ -262,6 +270,14 @@ th, td {
         width: 45.833333%;
         top: 35%;
         left: 0;
+    }
+    .four {
+        position: absolute;
+        top: 56%; /*top: 780px;*/
+        left: 0;
+        width: 100%; /*width: 960px;*/
+        clear: both;
+
     }
     #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
         display: block;
@@ -311,6 +327,14 @@ th, td {
     #people, #work, #householdsize, #income {
         margin-bottom: 5%;
     }
+    .four {
+        position: absolute;
+        top: 54%; /*top: 780px;*/
+        left: 0;
+        width: 100%; /*width: 960px;*/
+        clear: both;
+
+    }
 
 }
 
@@ -347,12 +371,56 @@ th, td {
     }
     .four {
         position: absolute;
-        top: 48.75%; /*top: 780px;*/
+        top: 65%; /*top: 780px;*/
         left: 0;
         width: 100%; /*width: 960px;*/
         clear: both;
-        border-top: 1px solid #7db9e8;
+
     }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    #myForm {
+        position: relative;
+        border-radius: 20px;
+        width: 100%; /*width: 960px;*/
+        height: 1600px; /*height: 3000px;*/
+        margin: 50px auto;
+        background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+        box-shadow: 2px 2px 10px #000;
+        overflow: hidden;
+    }
+
+    #three {
+        position: absolute;
+        width: 45.833333%;
+        top: 40%;
+        left: 0;
+    }
+    #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
+        display: block;
+        margin: 0; /*20px*/
+    }
+
+    .inhabitants, .working, .householdsize, #people, #work, #householdsize, #income {
+        display: block;
+        margin: 0;
+    }
+    #people, #work, #householdsize, #income {
+        margin-bottom: 5%;
+    }
+    .four {
+        position: absolute;
+        top: 70%; /*top: 780px;*/
+        left: 0;
+        width: 100%; /*width: 960px;*/
+        clear: both;
+
+    }
+
+}
 
 }
 
