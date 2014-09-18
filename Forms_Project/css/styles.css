@@ -15,9 +15,7 @@ body {
     width: 65%; /*width: 960px;*/
     height: 1600px; /*height: 3000px;*/
     margin: 4.166667% auto; /*40px;*/
-    /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
     background-color: rgba(43, 47, 255, .6);
-
     box-shadow: .125em .125em .625em #000; /*2px 2px 10px*/
     overflow: hidden;
 }
@@ -31,7 +29,6 @@ form * {
 #one {
     position: absolute;
     border-right: .063em solid #000000; /*1px*/
-    /*border-bottom: 1px solid #000000;*/
     padding-right: 1.8%; /*15px*/
     padding-bottom: 1.8%;/*15px*/
     box-shadow: .063em .063em .063em #000000; /*1px 1px 1px */
@@ -91,10 +88,10 @@ form * {
     margin-top: 20px;
     width: 45.833333%; /*width: 960px;*/;
     clear: both;
-    /*border-top: 1px solid #7db9e8;*/
 }
 
 /* Ends the Main CSS styling of the form and blocks */
+
 /* Styling headers and p's*/
 h2 {
     color: #ffffff;
@@ -111,7 +108,7 @@ h2:hover {
     transform: skew(20deg, 5deg);
 }
 h3.ref {
-    margin-left: 25px;
+    margin-left: 5.681818%;/*25px;*/
 }
 h3 {
     color: #ffffff;
@@ -135,30 +132,30 @@ p {
 label {
     color: #ffffff;
     display: block;
-    margin-top: 10px;
+    margin-top: 2.272727%;/*10px;*/
 }
 .date, #date {
     float: left;
     clear: left;
 }
 .date {
-    margin-top: 20px;
+    margin-top: 2.083333%;/*20px;*/
 }
 #date {
     background: #DFF1FF;
-    box-shadow: inset 2px 2px 2px #7db9e8;
-    border-radius: 5px;
+    box-shadow: inset .125em .125em .125em #7db9e8;/*2px*/
+    border-radius: .313em; /*5px*/
 }
 
 #name, #email, #datetime, #city, .state, #date {
-    margin: 5px 0 10px 0;
+    margin: 1.136364% 0 2.272727% 0;/*5px 10px*/
     display: block;
 }
 #city {
     width: 45.454545%; /*width: 200px;*/
     background: #DFF1FF;
-    box-shadow: inset 2px 2px 2px #7db9e8;
-    border-radius: 5px;
+    box-shadow: inset .125em .125em .125em #7db9e8;/*2px*/
+    border-radius: .313em;/*5px;*/
 }
 #city:hover {
     background: #FFFEBA;
@@ -172,7 +169,7 @@ label {
 }
 #location {
     float: left;
-    margin-top: 5px;
+    margin-top: 1.136364%;/*5px;*/
 }
 
 #state {
@@ -180,11 +177,11 @@ label {
 }
 
 #statelabel, #address {
-    margin-bottom: 5px;
+    margin-bottom: 1.136364%;/*5px;*/
 }
 
 #address {
-    margin-top: 5px;
+    margin-top: 1.136364%;/*5px;*/
 }
 
 #pickyear, #pickmonth, #pickday {
@@ -209,15 +206,12 @@ label {
 .monthpicker, .daypicker {
     margin-left: 11.363636%; /*margin-left: 50px;*/
 }
-#centerfs {
-    /*margin: 5px 20px 5px 70px;*/
-}
 
 #income {
     display: inline;
     margin-left: 3.409091%;/*margin-left: 15px;*/
     width: 27.272727%; /*width: 120px;*/
-    margin-bottom: 10px;
+    margin-bottom: 2.272727%;/*10px*/
 }
 
 .income {
@@ -227,15 +221,15 @@ label {
 
 .inhabitants, .working, .householdsize {
     display: inline;
-    margin-top: 10px;
+    margin-top: 2.272727%;/*10px;*/
 }
 #people {
     margin-left: 2.272727%; /*margin-left: 10px;*/
-    margin-bottom: 10px;
+    margin-bottom: 2.272727%;
 }
 #work {
     margin-left: 5.454545%; /*margin-left: 24px;*/
-    margin-bottom: 10px;
+    margin-bottom: 2.272727%;
 }
 #householdsize {
     margin-left: 29.090909%; /*margin-left: 128px;*/
@@ -243,9 +237,9 @@ label {
 
 select {
     margin-top: 2.272727%; /*margin-top: 10px;*/
-    border: 1px solid #55E829;
+    border: .063em solid #55E829;
     background: #20E869;
-    box-shadow: inset 2px 2px 2px #7db9e8;
+    box-shadow: inset .125em .125em .125em #7db9e8;/*2px*/
     height: 4.545455%; /*height: 20px;*/
     color: #666666;
 }
@@ -254,22 +248,22 @@ label.radio {
     float:left;
     clear:none;
     display: inline;
-    padding: 10px 0 0 6px;
+    padding: 2.272727% 0 0 1.363636%;/*10px 6px*/
 
 }
 
 input[type=radio], input.radio {
     float:left;
     clear: none;
-    margin: 20px 0 0 17px;
+    margin: 4.545455% 0 0 3.863636%;/*20px 17px*/
 
 }
 
 input[type=text], input[type=email], input[type=number] {
     background: #DFF1FF;
-    box-shadow: inset 2px 2px 2px #7db9e8;
-    border-radius: 5px;
-    width: 100%; /*width: 440px;*/
+    box-shadow: inset .125em .125em .125em #7db9e8;
+    border-radius: .313em;/*5px*/
+    width: 96%; /*width: 440px;*/
     margin-bottom: 1.136364%; /*margin-bottom: 5px;*/
 }
 
@@ -282,7 +276,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=datetime]:focus, inp
 }
 
 input[placeholder] {
-    padding-left: 10px;
+    padding-left: 3%;/*10px;*/
 }
 
 /* End of the major portion of styling the labels and text areas */
@@ -304,11 +298,11 @@ input[placeholder] {
     -ms-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
-    border: 1px solid #55E829;
-    border-radius: 8px;
+    border: .063em solid #55E829;
+    border-radius: .5em;/*8px*/
     top: 90%;
     left: 81.5%;
-    margin: 10px;
+    margin: 1.041667%;/*10px;*/
     font-size: 1em;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -340,7 +334,7 @@ th.question {
     text-align: left; /*padding-right: 200px*/
 }
 th.no, th.yes {
-    padding: 5px;
+    padding: .616em;/**/
     text-align: center;
 }
 th, td {
@@ -348,13 +342,13 @@ th, td {
     color: #ffffff;
 }
 .move {
-    padding-left: 6px;
+    padding-left: .375em; /*6px;*/
 }
 
 .refer {
     /*position: absolute;*/
     width: 47%;
-    box-shadow: 2px 2px 2px #000000;
+    box-shadow: .125em .125em .125em #000000;/*2px*/
     background-color: #1e5799;
 }
 textarea {
@@ -362,9 +356,9 @@ textarea {
 }
 .comments {
     background: #DFF1FF;
-    box-shadow: inset 2px 2px 2px #7db9e8;
-    border-radius: 5px;
-    padding-top: 5px;
+    box-shadow: inset .125em .125em .125em #7db9e8;/*2px*/
+    border-radius: .616em; /*5px;*/
+    padding-top: .616em; /*5px;*/
 }
 .comments:hover {
     background: #FFFEBA;
@@ -407,13 +401,13 @@ textarea {
 
     #myForm {
         position: relative;
-        border-radius: 20px;
+        border-radius: 1.25em;/*20px*/
         width: 100%; /*width: 960px;*/
         height: 1600px; /*height: 3000px;*/
-        margin: 50px auto;
+        margin: 5.208333% auto;/*50px*/
         /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
         background-color: rgba(43, 47, 255, .6);
-        box-shadow: 2px 2px 10px #000;
+        box-shadow: .125em .125em .625em #000; /*2px 10px*/
         overflow: hidden;
     }
 
@@ -434,7 +428,7 @@ textarea {
     }
     #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
         display: block;
-        margin: 0; /*20px*/
+        margin: 5.208333% 0; /*20px*/
     }
 
     .inhabitants, .working, .householdsize, #people, #work, #householdsize, #income {
@@ -456,23 +450,21 @@ textarea {
 
     #myForm {
         position: relative;
-        border-radius: 20px;
+        border-radius: 1.25em;/*20px*/
         width: 100%; /*width: 960px;*/
         height: 2000px; /*height: 3000px;*/
-        margin: 50px auto;
-        /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+        margin: 5.208333% auto;/*50px*/
         background-color: rgba(43, 47, 255, .6);
-        box-shadow: 2px 2px 10px #000;
+        box-shadow: .125em .125em .625em #000;
         overflow: hidden;
     }
 
     #one {
         position: absolute;
-        border-right: 1px solid #000000;
-        /*border-bottom: 1px solid #000000;*/
-        padding-right: 15px;
-        padding-bottom: 15px;
-        box-shadow: 1px 1px 1px #000000;
+        border-right: .063em solid #000000;/*1px=.063em*/
+        padding-right: 1.8%;/*15px*/
+        padding-bottom: 1.8%;
+        box-shadow: .063em .063em .063em #000000;
         background-color: #1e5799;
         float: left;
         width: 90%; /*45.833333%; 440px;*/
@@ -482,13 +474,10 @@ textarea {
     }
 
     #two {
-        /*margin-left: 50px;
-        float: left;
-        clear: right;*/
         margin: 0 auto;
-        border-left: 1px solid #000000;
-        border-bottom: 1px solid #000000;
-        box-shadow: 1px 1px 1px #000000;
+        border-left: .063em solid #000000;
+        border-bottom: .063em solid #000000;
+        box-shadow: .063em .063em .063em #000000;
         background-color: #31b0d5;
         -webkit-transition-property: background;
         -moz-transition-property: background;
@@ -511,7 +500,7 @@ textarea {
     #three {
         position: absolute;
         width: 90%; /*45.833333%;*/
-        top: 60%;/*35%*/
+        top: 62%;/*35%*/
         left: 5%;
     }
     #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
@@ -528,7 +517,7 @@ textarea {
     }
     .four {
         position: absolute;
-        top: 78%; /*top: 780px; 54%*/
+        top: 79%; /*top: 780px; 54%*/
         left: 0;
         width: 120%; /*width: 960px;*/
         clear: both;
@@ -538,7 +527,7 @@ textarea {
     .refer {
         width: 80%;
         margin-left: 0;
-        box-shadow: 2px 2px 2px #000000;
+        box-shadow: .125em .125em .125em #000000;
     }
 
     #submit {
@@ -556,11 +545,11 @@ textarea {
         -ms-transition-duration: 1s;
         -o-transition-duration: 1s;
         transition-duration: 1s;
-        border: 1px solid #55E829;
-        border-radius: 8px;
+        border: .063em solid #55E829;
+        border-radius: .5em;/*8px*/
         top: 95%;
         left: 67%;
-        margin: 10px;
+        margin: 1.041667%;/*10px*/
         font-size: 1em;
     }
 
@@ -580,24 +569,22 @@ textarea {
 
     #myForm {
         position: relative;
-        border-radius: 20px;
+        border-radius: 1.25em;/*20px*/
         width: 100%; /*width: 960px;*/
         height: 1860px; /*height: 3000px;*/
-        margin: 50px auto;
-        /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+        margin: 5.208333% auto;
         background-color: rgba(43, 47, 255, .6);
-        box-shadow: 2px 2px 10px #000;
+        box-shadow: .125em .125em .625em #000;
         overflow: hidden;
     }
 
     #one {
         position: absolute;
-        border-right: 1px solid #000000;
-        /*border-bottom: 1px solid #000000;*/
-        padding-right: 15px;
-        padding-bottom: 15px;
-        box-shadow: 1px 1px 1px #000000;
-        background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);
+        border-right: .063em solid #000000;
+        padding-right: 1.8%;
+        padding-bottom: 1.8%;/*15px*/
+        box-shadow: .063em .063em .063em #000000;
+        background-color: #1e5799;
         float: left;
         width: 90%; /*45.833333%; 440px;*/
         left: 5%;
@@ -606,13 +593,10 @@ textarea {
     }
 
     #two {
-        /*margin-left: 50px;
-        float: left;
-        clear: right;*/
         margin: 0 auto;
-        border-left: 1px solid #000000;
-        border-bottom: 1px solid #000000;
-        box-shadow: 1px 1px 1px #000000;
+        border-left: .063em solid #000000;
+        border-bottom: .063em solid #000000;
+        box-shadow: .063em .063em .063em #000000;
         background-color: #31b0d5;
         -webkit-transition-property: background;
         -moz-transition-property: background;
@@ -663,7 +647,7 @@ textarea {
     .refer {
         width: 90%;
         margin-left: 4%;
-        box-shadow: 2px 2px 2px #000000;
+        box-shadow: .125em .125em .125em #000000;
     }
 
     #submit {
@@ -681,11 +665,11 @@ textarea {
         -ms-transition-duration: 1s;
         -o-transition-duration: 1s;
         transition-duration: 1s;
-        border: 1px solid #55E829;
-        border-radius: 8px;
+        border: .063em solid #55E829;
+        border-radius: .5em;/*8px*/
         top: 97%;
         left: 67%;
-        margin: 10px;
+        margin: 1.041667%;/*10px*/
         font-size: 1em;
     }
 
