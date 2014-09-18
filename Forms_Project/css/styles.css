@@ -25,7 +25,6 @@ form * {
     left: 0;
     top: 3.125%;/*top: 30px;*/
     /*margin-right: 20px;*/
-    border-bottom: 1px solid #000000;
 }
 
 #two {
@@ -50,9 +49,9 @@ form * {
 }
 .four {
     position: absolute;
-    top: 780px;
+    top: 48.75%; /*top: 780px;*/
     left: 0;
-    width: 960px;
+    width: 100%; /*width: 960px;*/
     clear: both;
     border-top: 1px solid #7db9e8;
 }
@@ -61,7 +60,7 @@ h3, h2 {
     text-align: center;
 }
 h2 {
-    width: 960px;
+    width: 100%; /*width: 960px;*/
     border-bottom: 1px solid #7db9e8;
 }
 p {
@@ -77,33 +76,42 @@ label {
     display: block;
 }
 #city {
-    width: 150px;
+    width: 45.454545%; /*width: 200px;*/
     background: #DFF1FF;
     box-shadow: inset 2px 2px 2px #7db9e8;
     border-radius: 5px;
 }
-input[type=date] {
+/*input[type=date] {
     width: 100px;
     background: #DFF1FF;
     box-shadow: inset 2px 2px 2px #7db9e8;
     border-radius: 5px;
-}
+}*/
 
 #local {
     float: left;
 }
 #location {
     float: left;
-    margin-left: 130px;
+    /*margin-left: 31.818182%; margin-left: 140px;*/
     margin-top: 5px;
 
 }
+
+#state {
+    width: 100%;
+}
+
 #statelabel, #address {
     margin-bottom: 5px;
 }
 
 #address {
     margin-top: 5px;
+}
+
+#pickyear, #pickmonth, #pickday {
+    margin-bottom: 4.545455%; /*20px*/
 }
 
 .yearpicker {
@@ -118,41 +126,42 @@ input[type=date] {
     clear: right;
 }
 #bd {
-    margin: 2px auto;
+    text-align: left;
+    margin-bottom: 1.136364%; /*5px*/
 }
 .monthpicker, .daypicker {
-    margin-left: 40px;
+    margin-left: 11.363636%; /*margin-left: 50px;*/
 }
 #centerfs {
-    margin: 5px 20px 5px 70px;
+    /*margin: 5px 20px 5px 70px;*/
 }
 
 #income {
     display: inline;
-    margin-left: 15px;
+    margin-left: 3.409091%;/*margin-left: 15px;*/
     width: 27.272727%; /*width: 120px;*/
     margin-bottom: 10px;
 }
 
 .income {
     display: inline;
-    margin-top: 20px;
+    margin-top: 4.545455%; /*margin-top: 20px;*/
 }
 
 select {
-    margin-top: 10px;
+    margin-top: 2.272727%; /*margin-top: 10px;*/
     border: 1px solid #355DFF;
     background: #DFF1FF;
     box-shadow: inset 2px 2px 2px #7db9e8;
-    height: 20px;
+    height: 4.545455%; /*height: 20px;*/
 }
 
 input[type=text], input[type=email], input[type=number] {
     background: #DFF1FF;
     box-shadow: inset 2px 2px 2px #7db9e8;
     border-radius: 5px;
-    width: 400px;
-    margin-bottom: 5px;
+    width: 100%; /*width: 440px;*/
+    margin-bottom: 1.136364%; /*margin-bottom: 5px;*/
 }
 
 input[type=text]:hover, input[type=email]:hover, input[type=datetime]:hover, input[type=number]:hover, select:hover, #income:hover {
@@ -187,10 +196,11 @@ fieldset {
 /* Second column */
 
 th.question {
-    padding-right: 200px
+    text-align: left; /*padding-right: 200px*/
 }
 th.no, th.yes {
     padding: 5px;
+    text-align: center;
 }
 th, td {
     border-bottom: 1px solid #7db9e8;
@@ -231,4 +241,70 @@ th, td {
 .comments:focus {
     background: #C8F3FF;
 }
+
+/* Media Queries */
+@media screen and (min-width: 991px) and (max-width: 2000px) {
+    .inhabitants, .working, .householdsize, #people, #work, #householdsize, #income {
+        display: block;
+        margin: 0;
+    }
+    #people, #work, #householdsize, #income {
+        margin-bottom: 5%;
+    }
+
+
+}
+
+@media screen and (max-width: 990px) {
+
+    #three {
+        position: absolute;
+        width: 45.833333%;
+        top: 35%;
+        left: 0;
+    }
+    #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
+        display: block;
+        margin: 0; /*20px*/
+    }
+
+    .inhabitants, .working, .householdsize, #people, #work, #householdsize, #income {
+        display: block;
+        margin: 0;
+    }
+    #people, #work, #householdsize, #income {
+        margin-bottom: 5%;
+    }
+    #income {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #three {
+        position: absolute;
+        width: 45.833333%;
+        top: 40%;
+        left: 0;
+    }
+    #pickyear, #pickmonth, #pickday, .monthpicker, .daypicker, .yearpicker {
+        display: block;
+        margin: 0; /*20px*/
+    }
+
+    .inhabitants, .working, .householdsize, #people, #work, #householdsize, #income {
+        display: block;
+        margin: 0;
+    }
+    #people, #work, #householdsize, #income {
+        margin-bottom: 5%;
+    }
+
+}
+
+
+
+
+
 
