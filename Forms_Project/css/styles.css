@@ -10,9 +10,14 @@ body {
     width: 65%; /*width: 960px;*/
     height: 1600px; /*height: 3000px;*/
     margin: 50px auto;
-    background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);
+    /*background: linear-gradient(to bottom,  #1e5799 0%, #2989d8 53%, #7db9e8 100%);*/
+    background-color: #173D7F;
+
     box-shadow: 2px 2px 10px #000;
     overflow: hidden;
+}
+.radio #a {
+    display: inline;
 }
 form * {
     background: transparent;
@@ -25,12 +30,17 @@ form * {
     padding-right: 15px;
     padding-bottom: 15px;
     box-shadow: 1px 1px 1px #000000;
-    background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);
+    /*background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);*/
+    background-color: #1e5799;
     float: left;
     width: 45.833333%; /*width: 440px;*/
     left: 0;
     top: 3.125%;/*top: 30px;*/
     /*margin-right: 20px;*/
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    -o-perspective: 500px;
+    perspective: 500px;
 }
 
 #two {
@@ -68,7 +78,8 @@ form * {
     border-bottom: 1px solid #000000;
     padding-right: 15px;
     margin-top: 10px;
-    background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);
+    /*background: linear-gradient(to top, #90C6FF 0%, #82B2E5 50%, #7DA3FF 100%);*/
+    background-color: #1e5799;
     box-shadow: 1px 1px 1px #000000;
     position: absolute;
     top: 32.5%; /*top: 520px;*/
@@ -82,15 +93,31 @@ form * {
     top: 48.75%; /*top: 780px;*/
     left: 0;
     margin-top: 20px;
-    width: 100%; /*width: 960px;*/
+    width: 45.833333%; /*width: 960px;*/;
     clear: both;
     /*border-top: 1px solid #7db9e8;*/
 }
+
 /* Ends the Main CSS styling of the form and blocks */
 /* Styling headers and p's*/
-h3, h2 {
+h2 {
     color: #ffffff;
     text-align: center;
+}
+h3 {
+    color: #ffffff;
+    text-align: left;
+    -webkit-transition: all 6s ease;
+    -moz-transition: all 6s ease;
+    -o-transition: all 6s ease;
+    transtion: all 6s ease;
+}
+
+h3:hover {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
 }
 p {
     color: #ffffff;
@@ -110,6 +137,12 @@ label {
     background: #DFF1FF;
     box-shadow: inset 2px 2px 2px #7db9e8;
     border-radius: 5px;
+}
+#city:hover {
+    background: #FFFEBA;
+}
+#city:focus {
+    background: #C8F3FF;
 }
 
 #local {
@@ -188,10 +221,26 @@ label {
 
 select {
     margin-top: 2.272727%; /*margin-top: 10px;*/
-    border: 1px solid #355DFF;
-    background: #DFF1FF;
+    border: 1px solid #55E829;
+    background: #20E869;
     box-shadow: inset 2px 2px 2px #7db9e8;
     height: 4.545455%; /*height: 20px;*/
+    color: #666666;
+}
+
+label.radio {
+    float:left;
+    clear:none;
+    display: inline;
+    padding: 10px 0 0 6px;
+
+}
+
+input[type=radio], input.radio {
+    float:left;
+    clear: none;
+    margin: 20px 0 0 17px;
+
 }
 
 input[type=text], input[type=email], input[type=number] {
@@ -202,11 +251,11 @@ input[type=text], input[type=email], input[type=number] {
     margin-bottom: 1.136364%; /*margin-bottom: 5px;*/
 }
 
-input[type=text]:hover, input[type=email]:hover, input[type=datetime]:hover, input[type=number]:hover, select:hover, #income:hover {
+input[type=text]:hover, input[type=email]:hover, input[type=datetime]:hover, input[type=number]:hover, select:hover, #income:hover, input[type=radio]:hover {
     background: #FFFEBA;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=datetime]:focus, input[type=number] {
+input[type=text]:focus, input[type=email]:focus, input[type=datetime]:focus, input[type=number]:focus, input[type=radio]:focus {
     background: #C8F3FF;
 }
 
@@ -218,9 +267,9 @@ input[placeholder] {
 
 /* Styling the submit button */
 #submit {
-    width: 20%;
-    height: 2%;
-    position: absolute;
+    width: 15%;
+    height: 5%;
+    position: fixed; /* absolute */
     /*background: linear-gradient(to bottom, #44E819 0%, #20E869 50%, #8FFF9A 100%);*/
     background-color: #20E869;
     -webkit-transition-property: background;
@@ -235,17 +284,28 @@ input[placeholder] {
     transition-duration: 1s;
     border: 1px solid #55E829;
     border-radius: 8px;
-    top: 95%;
-    left: 67%;
+    top: 90%;
+    left: 81.5%;
     margin: 10px;
     font-size: 1em;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 1;
 
 }
 #submit:hover {
     /*background: linear-gradient(to top, #44E819 0%, #20E869 50%, #8FFF9A 100%);*/
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
     background-color: #355DFF;
     cursor: pointer;
 }
+
 /* Styling of the table for the form */
 fieldset {
     display: block;
@@ -268,9 +328,9 @@ th, td {
 
 .refer {
     /*position: absolute;*/
-    width: 75%;
-    margin: 0 auto;/*margin-left: 60px;*/
+    width: 47%;
     box-shadow: 2px 2px 2px #000000;
+    background-color: #1e5799;
 }
 textarea {
     width: 90%; /*180px;*/
@@ -288,6 +348,8 @@ textarea {
     background: #C8F3FF;
 }
 /* End table styling */
+
+
 
 /* End main CSS styling*/
 
