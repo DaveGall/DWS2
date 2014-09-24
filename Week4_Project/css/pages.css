@@ -40,6 +40,9 @@ aside {
     border: 1px solid #000000;
     clear: both;
 }
+.adspace p {
+    text-align: center;
+}
 .medium {
     width: 125px;
     height: 125px;
@@ -53,8 +56,17 @@ aside {
     height: 125px;
     position: absolute;
     top: 0;
-    left: 500px;
+    left: 640px;
     border: 1px solid #000000;
+}
+.right {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 0;
+    left: 1294px;
+    border: 1px solid #000000;
+
 }
 
 /* Footer styling section */

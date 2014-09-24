@@ -54,13 +54,33 @@ h3, p a {
     float: right;
     width: 80px;
     margin: 20px 20px 10px 0;
-    background: linear-gradient(#33d956 0%, #66e380 100% ) ;
+    background: #33d956; /*linear-gradient(#33d956 0%, #66e380 100% ) ;*/
     border: 2px solid #00d02c;
     border-radius: 8px;
     box-shadow: 1px 1px 2px #99ecab;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -ms-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 #submit:hover {
-    background: linear-gradient(#66e380 0%, #33d956 100%);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    background: #06ff00; /*linear-gradient(#66e380 0%, #33d956 100%);*/
+    cursor: pointer;
 }
 #submit:active {
     background: #06ff00;
