@@ -1,0 +1,85 @@
+/* Stylings for all the article pages */
+/* Header Styling */
+
+header {
+    border: 1px solid #000000;
+}
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+/* Main article styling */
+article {
+    width: 960px;
+    float: left;
+    clear: right;
+    border: 1px solid #000000;
+    margin: 40px 20px 40px 100px;
+}
+article h2, aside h3 {
+    text-align: center;
+}
+article p, aside p {
+    padding-left: 10px;
+    text-indent: 10px;
+}
+/* End main article styling */
+/* Aside styling */
+aside {
+    width: 300px;
+    float: left;
+    border: 1px solid #000000;
+    margin: 40px 20px;
+}
+/* End aside styling */
+
+.adspace {
+    width: 1420px;
+    height: 125px;
+    position: relative;
+    border: 1px solid #000000;
+    clear: both;
+}
+.medium {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+}
+.large {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    border: 1px solid #000000;
+}
+
+/* Footer styling section */
+
+.bottomnav {
+    margin-top: 20px;
+}
+
+.bottomnav .foot .colone ul {
+    float: left;
+    padding-left: 300px;
+}
+.bottomnav .foot .coltwo ul {
+    float: left;
+    clear: right;
+    padding-left: 200px;
+}
+.bottomnav .foot .colthree ul {
+    float: left;
+    clear: right;
+    padding-left: 200px;
+}
+.bottomnav .foot .colfour ul {
+    float: left;
+    clear: right;
+    padding-left: 200px;
+}
+/* End footer styling */

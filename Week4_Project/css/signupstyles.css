@@ -1,0 +1,71 @@
+/* Sign Up Form*/
+
+body {
+    background: #030068;
+}
+form * {
+    background: transparent;
+}
+#myForm {
+    width: 600px;
+    margin: 50px auto;
+    border: 4px outset #06ff00;
+    background: linear-gradient(#000000 0%, #333333 50%, #666666 100%);
+    box-shadow: 5px 5px 5px #0c7580;
+    border-radius: 10px;
+}
+h3 {
+    text-align: center;
+}
+fieldset {
+    border: hidden;
+}
+label {
+    display: block;
+    margin-top: 20px;
+    color: #ffffff;
+}
+input {
+    margin-top: 5px;
+    border: inset #333dc7;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px #000000;
+    background: linear-gradient(#a2f7ff 25%, #d1fbff 100%);
+}
+input:hover {
+    background: #fff333;
+}
+input:focus {
+    background: #dcffbe;
+}
+.updates, .newsletter {
+    display: inline-block;
+    clear: both;
+    margin-left: 10px;
+}
+p {
+    margin-top: 30px;
+}
+h3, p a {
+    color: #d1fbff;
+}
+
+#submit {
+    float: right;
+    width: 80px;
+    margin: 20px 20px 10px 0;
+    background: linear-gradient(#33d956 0%, #66e380 100% ) ;
+    border: 2px solid #00d02c;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #99ecab;
+}
+#submit:hover {
+    background: linear-gradient(#66e380 0%, #33d956 100%);
+}
+#submit:active {
+    background: #06ff00;
+}
+
+
+
+

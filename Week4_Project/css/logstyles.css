@@ -1,0 +1,70 @@
+/* Login stylesheet */
+body {
+    background-color: #030068;
+}
+/* Main content styling */
+#wrapper {
+    width: 500px;
+    background: linear-gradient(#000000 0%, #333333 50%, #666666 100% );
+    margin: 50px auto;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #0c7580;
+    border-radius: 10px;
+    border: 4px outset #06ff00;
+
+}
+fieldset {
+    border: hidden;
+}
+fieldset h3 {
+    color: #d1fbff;
+    text-align: center;
+}
+p {
+    color: #ffffff;
+    margin-top: 30px;
+}
+p a {
+    color: #99e2f5;
+}
+form * {
+    background: transparent;
+}
+/* End main styling */
+/* Label styling */
+label {
+    display: block;
+    color: #ffffff;
+    margin: 20px 0 10px 0;
+}
+input {
+    width: 200px;
+    height: 20px;
+    border: 2px inset #8fc6ff;
+    background: linear-gradient(#a2f7ff 25%, #d1fbff 100%);
+    border-radius: 5px;
+}
+
+/* End label styling */
+
+/* Submit styling */
+
+#submit {
+    float: right;
+    margin: 50px 20px 10px 20px;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(#33d956 0%, #66e380 100% ) ;
+    border: 2px solid #00d02c;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #99ecab;
+}
+#submit:hover {
+    background: linear-gradient(#66e380 0%, #33d956 100%);
+}
+#submit:active {
+    background: #06ff00;
+}
+
+
+

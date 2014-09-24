@@ -1,0 +1,196 @@
+/* Week 4 Project */
+
+body {
+    background-color: #030068;
+}
+p {
+    text-indent: 10px;
+}
+.wrapper {
+    background: #ffffff;
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+    border: 4px outset #06ff00;
+}
+
+/* Main header group with nav and slider styling */
+.headergroup {
+    width: 960px;
+    background: url("../img/BG960x470.jpg");
+    /*background: linear-gradient(#666666 0%, #333333 50%, #000000 100%);*/
+    border: 1px solid #000000;
+}
+.mainnav {
+    width: 960px;
+}
+h1 {
+    font-size: 2em;
+}
+.mainnav h1 {
+    text-align: center;
+    background: rgba(255, 164, 120, .6);
+    color: #576162;
+}
+.headergroup .mainnav ul li {
+    display: inline;
+    padding: 2px 8px;
+    margin: 10px;
+    border: 1px solid #45fffd;
+    border-radius: 8px;
+    background: linear-gradient(#2e9dff 25%, #5cacff 60%, #9dcdff 100%);
+    box-shadow: 1px 1px 1px 1px #7dbdff;
+}
+.headergroup .mainnav ul li:hover {
+    background: linear-gradient(#9dcdff 25%, #5cacff 60%, #2e9dff 100%);
+}
+.headergroup .mainnav ul li:active {
+    background: #333dc7;
+}
+.headergroup .mainnav ul li a {
+    color: #ffffff;
+    text-align: left;
+}
+.pagenav {
+    float: left;
+}
+.login {
+    float: left;
+    clear: right;
+    margin-left: 280px;
+}
+
+#slider {
+    width: 640px;
+    height: 250px;
+    border: 1px solid #000000;
+    margin: 100px auto 40px auto;
+    background: #06ff00;
+}
+
+/* End main header group styling */
+/* Main section of the page styling */
+
+.sidebar {
+    width: 200px;
+    margin: 10px;
+    background-color: #eeeeee;
+    float: left;
+    border: 1px solid #000000;
+}
+.sidebar h2, .main h2, #one h2, #two h2, #three h2 {
+    text-align: center;
+}
+.sidebar ul li {
+    display: block;
+    padding-top: 10px;
+}
+.main1 {
+    width: 712px;
+    margin: 10px;
+    background-color: #cccccc;
+    float: left;
+    clear: right;
+    border: 1px solid #000000;
+}
+
+.main1 p, .sidebar p {
+    padding: 5px;
+}
+/* End main section styling */
+
+/* Mid section styling */
+
+.smallarticles {
+    width: 960px;
+    height: 402px;
+    position: relative;
+    clear: both;
+    border: 1px solid #000000;/* Take out when complete */
+    /*background: #628cc7;*/
+}
+#one a, #two a, #three a {
+    width: 100px;
+    border: 2px outset #45fffd;
+    border-radius: 10px;
+    background: linear-gradient(#2e9dff 25%, #5cacff 60%, #9dcdff 100%);
+    color: #ffffff;
+    box-shadow: 1px 1px 1px 1px #7dbdff;
+    text-align: center;
+    padding: 2px 0;
+    float: right;
+    margin: 40px 10px 20px 0;
+}
+#one a:hover, #two a:hover, #three a:hover {
+    background: linear-gradient(#9dcdff 25%, #5cacff 60%, #2e9dff 100%);
+}
+#one a:active, #two a:active, #three a:active {
+    background: #333dc7;
+}
+#one p, #two p, #three p {
+    padding-left: 5px;
+}
+figure {
+    text-align: center;
+}
+img {
+    box-shadow: 1px 1px 3px #000000;
+    border: 2px outset #000000;
+}
+#one {
+    position: absolute;
+    height: 400px;
+    top: 0;
+    left: 10px;
+    width: 300px;
+    border: 1px solid #000000;/* Take out when complete */
+}
+#two {
+    position: absolute;
+    height: 400px;
+    top: 0;
+    left: 330px;
+    width: 300px;
+    border: 1px solid #000000; /* Take out when complete */
+}
+#three {
+    position: absolute;
+    height: 400px;
+    top: 0;
+    left: 650px;
+    width: 300px;
+    border: 1px solid #000000; /* Take out when complete */
+}
+/* End mid section styling */
+
+/* Footer styling section */
+
+.bottomnav {
+    margin-top: 20px;
+}
+
+.bottomnav .foot .colone ul {
+    float: left;
+    padding-left: 200px;
+}
+.bottomnav .foot .coltwo ul {
+    float: left;
+    clear: right;
+    padding-left: 100px;
+}
+.bottomnav .foot .colthree ul {
+    float: left;
+    clear: right;
+    padding-left: 100px;
+}
+.bottomnav .foot .colfour ul {
+    float: left;
+    clear: right;
+    padding-left: 100px;
+}
+
+
+
+/* End footer section styling */
+
+

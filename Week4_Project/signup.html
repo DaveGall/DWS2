@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link href="css/signupstyles.css" rel="stylesheet">
+</head>
+<body>
+<form id="myForm" action="http://localhost:63342/Week4_Project/index.html" method="post">
+    <fieldset>
+        <h3>Sign Up for Free</h3>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" autofocus tabindex="1" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" tabindex="2" placeholder="Your Email" required>
+
+        <label for="phone">Phone Number (optional)</label>
+        <input type="number" name="phone" id="phone" tabindex="3" placeholder="123-456-7890">
+        <div class="checkone">
+            <input type="checkbox" name="newsletter" id="newsletter" tabindex="4">
+            <label for="newsletter" class="newsletter">Would you like to receive our monthly newsletter?</label>
+        </div>
+        <div class="checktwo">
+            <input type="checkbox" name="updates" id="updates" tabindex="5">
+            <label for="updates" class="updates">Would you like to receive important updates?</label>
+        </div>
+
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Legal Information</a></p>
+
+
+        <input type="submit" name="submit" id="submit" value="Submit" tabindex="3">
+    </fieldset>
+</form>
+</body>
+</html>
