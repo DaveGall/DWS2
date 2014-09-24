@@ -168,20 +168,24 @@ img {
 .bottomnav {
     margin-top: 20px;
 }
-
+.colone ul li, .coltwo ul li, .colthree ul li, .colfour ul li {
+    display: block;
+}
 .bottomnav .foot .colone ul {
     float: left;
-    padding-left: 100px;
+    padding-left: 150px;
 }
 .bottomnav .foot .coltwo ul {
     float: left;
     clear: right;
     padding-left: 100px;
+
 }
 .bottomnav .foot .colthree ul {
     float: left;
     clear: right;
     padding-left: 100px;
+
 }
 .bottomnav .foot .colfour ul {
     float: left;
