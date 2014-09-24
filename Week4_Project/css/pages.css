@@ -14,6 +14,7 @@ article {
     float: left;
     clear: right;
     border: 1px solid #000000;
+    box-shadow: 2px 2px 3px #000000;
     margin: 40px 20px 40px 100px;
 }
 article h2, aside h3 {
@@ -28,8 +29,18 @@ article p, aside p {
 aside {
     width: 300px;
     float: left;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
     margin: 40px 20px;
+}
+aside ul li {
+    display: block;
+}
+figure {
+    margin: auto;
+}
+img {
+    border: 2px outset #000000;
+    box-shadow: 2px 2px 3px #000000;
 }
 /* End aside styling */
 
