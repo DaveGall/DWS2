@@ -1,19 +1,26 @@
 /* Stylings for all the article pages */
 /* Header Styling */
 
+.wrapper {
+    background: #b9c2d0;/*#cbb29d #467e93;*/
+    overflow: auto;
+}
+
 header {
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
 }
 header h1 {
     text-align: center;
     font-size: 2.5em;
+    color: #576162;
+    background: rgba(255, 164, 120, .6);
 }
 /* Main article styling */
 article {
     width: 960px;
     float: left;
     clear: right;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
     box-shadow: 2px 2px 3px #000000;
     margin: 40px 20px 40px 100px;
 }
@@ -34,12 +41,13 @@ aside {
 }
 aside ul li {
     display: block;
+    padding-bottom: 10px;
 }
 figure {
     margin: auto;
 }
 img {
-    border: 2px outset #000000;
+    /*border: 2px outset #000000;*/
     box-shadow: 2px 2px 3px #000000;
 }
 /* End aside styling */
