@@ -211,7 +211,6 @@ td {
 @media screen and (min-width: 280px) and (max-width: 479px) {
     .wrapper {
         width: 100%;
-        background: #fff333;
     }
     .headergroup .mainnav .pagenav ul{
         text-align: left;
@@ -283,7 +282,6 @@ td {
     .wrapper {
         width: 90%;
         margin: auto;
-        background: #06ff00;
     }
     .headergroup {
         width: 103%;
@@ -355,7 +353,6 @@ td {
     .wrapper {
         width: 90%;
         margin: auto;
-        background: #576162;
     }
     .headergroup {
         width: 103%;
@@ -402,7 +399,6 @@ td {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     body {
         width: 100%;
-        background: #baff17;
     }
     .wrapper {
         width: 90%;

@@ -302,4 +302,28 @@ img {
 
 /* End footer section styling */
 
+/* Media queries */
+@media screen and (min-width: 280px) and (max-width: 479px) {
+    .wrapper {
+        background: #00e79b;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    .wrapper {
+        background: #ffffff;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    .wrapper {
+        background: #06ff00;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .wrapper {
+        background: #fff333;
+    }
+}
 

@@ -38,7 +38,7 @@ label {
     margin: 1.250em 0 .625em 0;/*20px 0 10px 0;*/
 }
 input {
-    width: 40%; /*200px 200/500;*/
+    width: 50%; /*250px 250/500;*/
     height: 4%; /*20px 20/500;*/
     border: .125em inset #8fc6ff; /* 2px */
     background: linear-gradient(#a2f7ff 25%, #d1fbff 100%);
@@ -91,6 +91,56 @@ input:focus {
 #submit:active {
     background: #06ff00;
 }
+/* End submit styling */
 
+/*Media queries*/
+
+@media screen and (min-width: 280px) and (max-width: 479px) {
+    #wrapper {
+        width: 75.156576%;
+    }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    #wrapper {
+        width: 78.247261%;
+    }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    #wrapper {
+        width: 65.189048%;
+    }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    #wrapper {
+        width: 39.0625%;
+    }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+}
 
 
