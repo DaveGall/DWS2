@@ -1,27 +1,37 @@
 /* Stylings for all the article pages */
 /* Header Styling */
-
+body {
+    background-color: #030068;
+    width: 100%;/*1440px*/
+}
+img {
+    max-width: 100%;
+}
 .wrapper {
-    background: #b9c2d0;/*#cbb29d #467e93;*/
+    width: 66.666667%; /*960px*/
+    margin: auto;
+    background: linear-gradient(#cadeee 0%, #afcee5 60%, #79add4 100% );/*background: #b9c2d0;*/
     overflow: auto;
 }
 .headergroup {
     margin: auto;
-    width: 960px;
+    width: 100%;/*960px*/
     background: url("../img/BG960x470.jpg");
-    /*background: linear-gradient(#666666 0%, #333333 50%, #000000 100%);*/
-    box-shadow: 2px 2px 3px #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     overflow: auto;
 }
 
 .headergroup .mainnav ul li {
     display: inline;
-    padding: 2px 8px;
-    margin: 10px;
-    border: 1px solid #45fffd;
-    border-radius: 8px;
+    padding: .125em .5em;/*2px 8px;*/
+    margin-left: .625em; /* 10px */
+    border: .063em solid #45fffd;/*1px */
+    border-radius: .5em; /*8px;*/
     background: linear-gradient(#2e9dff 25%, #5cacff 60%, #9dcdff 100%);
-    box-shadow: 1px 1px 1px 1px #7dbdff;
+    box-shadow: .063em .063em .063em .063em #7dbdff;/*1px */
 }
 .headergroup .mainnav ul li:hover {
     background: linear-gradient(#9dcdff 25%, #5cacff 60%, #2e9dff 100%);
@@ -38,11 +48,9 @@
 .login {
     float: left;
     clear: right;
-    margin-left: 280px;
+    margin-left: 29.166667%;/*280px;*/
 }
-header {
-    /*border: 1px solid #000000;*/
-}
+
 header h1 {
     text-align: center;
     font-size: 2.5em;
@@ -51,117 +59,175 @@ header h1 {
 }
 /* Main article styling */
 article {
-    width: 960px;
+    border-left-style: groove;
+    width: 62.5%;/*600px;*/
     float: left;
     clear: right;
-    /*border: 1px solid #000000;*/
-    box-shadow: 2px 2px 3px #000000;
-    margin: 40px 20px 40px 100px;
+    margin: 4.166667% 1.5625%;/*40px 15px;*/
 }
 article h2, aside h3 {
     text-align: center;
 }
 article p, aside p {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-indent: 10px;
+    padding-left: 1.666667%;/*10px;*/
+    padding-right: 1.666667%;/*10px;*/
+    text-indent: 1.666667%;/*10px;*/
 }
 /* End main article styling */
 /* Aside styling */
 aside {
-    width: 300px;
+    width: 26.041667%;/*250px;*/
     float: left;
-    /*border: 1px solid #000000;*/
-    margin: 40px 20px;
+    margin: 4.166667% 1.5625%;/*40px 15px;*/
 }
 aside ul li {
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 4%;/*10px; 10/250 = .04 */
 }
+aside ul li a {
+    color: #333dc7;
+}
+aside ul li a:hover {
+    color: #06ff00;
+}
+aside ul li a:active {
+    color: #ffffff;
+}
+
 figure {
     margin: auto;
 }
 img {
-    /*border: 2px outset #000000;*/
-    box-shadow: 2px 2px 3px #000000;
+    border-radius: .625em; /*10px;*/
+    box-shadow: .125em .125em .188em #000000; /* 2px 2px 3px */
+}
+.main ul {
+    text-align: center;
+    margin-right: 16%;/*40px; 40/250 = .16 */
 }
 /* End aside styling */
 
+/* Ad space styling */
+
 .adspace {
-    width: 1420px;
-    height: 125px;
+    width: 100%; /* 960px */
+    height: 8.125em; /*130px;*/
     position: relative;
-    /*border: 1px solid #000000;*/
+    border-top-style: groove;
     clear: both;
 }
 .adspace p {
     text-align: center;
 }
 .medium {
-    width: 125px;
-    height: 125px;
+    width: 13.020833%;/*125px 125/960;*/
+    height: 96.153846%; /*125px 125/130;*/
+    border-radius: .625em; /*10px;*/
+    background: linear-gradient(90deg, #baff17 10%, #d6ff74 40%, #e3ffa2 100% );
     position: absolute;
-    top: 0;
-    left: 10px;
-    border: 1px solid #000000;
+    top: 1.538462%;/*2px 2/130;*/
+    left: 1.041667%;/*10px 10/960;*/
+    box-shadow: .063em .063em .125em #000000;/*1px 1px 2px*/
 }
 .longleft {
     position: absolute;
-    width: 468px;
-    height: 60px;
-    top: 32px;
-    left: 154px;
-    border: 1px solid #000000;
+    background: radial-gradient(#00e79b 40%, #99f5d7 60% );
+    width: 48.75%;/*468px 468/960;*/
+    height: 46.153846%; /*60px 60/130;*/
+    border-radius: .625em; /*10px;*/
+    top: 26.153846%; /*34px 34/130;*/
+    left: 25%; /*240px 240/960;*/
+    box-shadow: .063em .063em .125em #000000;/*1px 1px 2px*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.longleft:hover {
+    -webkit-transform: skew(40deg, 5deg);
+    -moz-transform: skew(40deg, 5deg);
+    -o-transform: skew(40deg, 5deg);
+    transform: skew(40deg, 5deg);
 }
 .large {
-    width: 125px;
-    height: 125px;
+    width: 13.020833%;/*125px 125/960;*/
+    height: 96.153846%; /*125px 125/130;*/
+    border-radius: .625em; /*10px;*/
+    background: linear-gradient(90deg, #e3ffa2 10%, #d6ff74 40%, #baff17 100% );
     position: absolute;
-    top: 0;
-    left: 640px;
-    border: 1px solid #000000;
+    top: 1.538462%;/*2px 2/130;*/
+    left: 85.9375%;/*825px 825/960;*/
+    box-shadow: 1px 1px 2px #000000;
 }
-.longright {
-    width: 468px;
-    height: 60px;
-    position: absolute;
-    top: 32px;
-    left: 790px;
-    border: 1px solid #000000;
+
+/* End ad space styling */
+
+/* Table styling section*/
+.table {
+    border-top: outset;
 }
-.right {
-    width: 125px;
-    height: 125px;
-    position: absolute;
-    top: 0;
-    left: 1284px;
-    border: 1px solid #000000;
+fieldset {
+    border: groove;
+    margin-bottom: 1.250em; /*20px;*/
+}
+table {
+    width: 93.75%; /*900px 900/960;*/
+    margin: auto;
+}
+fieldset h3 {
+    text-align: center;
 
 }
+td {
+    border-bottom: .063em groove #000000; /* 1px */
+}
+td a {
+    color: #333dc7;
+}
+td a:hover {
+    color: #06ff00;
+}
+td a:active {
+    color: #000000;
+}
+tr:hover {
+    background: #ffffff;
+}
+th {
+    padding-bottom: .625em; /*10px;*/
+}
+td {
+    padding: .313em 1.250em; /*5px 20px;*/
+}
+
+
+/* End table styling section */
 
 /* Footer styling section */
 
 .bottomnav {
-    margin-top: 20px;
+    margin-top: 1.250em; /*20px;*/
+    border-top-style: groove;
 }
 
 .bottomnav .foot .colone ul {
     float: left;
-    padding-left: 300px;
+    padding-left: 15.625%; /*150px 150/960;*/
 }
 .bottomnav .foot .coltwo ul {
     float: left;
     clear: right;
-    padding-left: 200px;
+    padding-left: 10.416667%; /*100px;*/
 }
 .bottomnav .foot .colthree ul {
     float: left;
     clear: right;
-    padding-left: 200px;
+    padding-left: 10.416667%; /*100px;*/
 }
 .bottomnav .foot .colfour ul {
     float: left;
     clear: right;
-    padding-left: 200px;
+    padding-left: 10.416667%; /*100px;*/
 }
 /* End footer styling */

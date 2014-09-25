@@ -4,13 +4,13 @@ body {
 }
 /* Main content styling */
 #wrapper {
-    width: 500px;
+    width: 34.722222%; /*500px;*/
     background: linear-gradient(#000000 0%, #333333 50%, #666666 100% );
-    margin: 50px auto;
+    margin: 3.125em auto;/*50px auto;*/
     overflow: hidden;
-    box-shadow: 5px 5px 5px #0c7580;
-    border-radius: 10px;
-    border: 4px outset #06ff00;
+    box-shadow: .313em .313em .313em #0c7580;/*5px 5px 5px*/
+    border-radius: .625em; /*10px;*/
+    border: .250em outset #06ff00; /* 4px */
 
 }
 fieldset {
@@ -22,7 +22,7 @@ fieldset h3 {
 }
 p {
     color: #ffffff;
-    margin-top: 30px;
+    margin-top: 1.875em; /*30px;*/
 }
 p a {
     color: #99e2f5;
@@ -35,14 +35,14 @@ form * {
 label {
     display: block;
     color: #ffffff;
-    margin: 20px 0 10px 0;
+    margin: 1.250em 0 .625em 0;/*20px 0 10px 0;*/
 }
 input {
-    width: 200px;
-    height: 20px;
-    border: 2px inset #8fc6ff;
+    width: 40%; /*200px 200/500;*/
+    height: 4%; /*20px 20/500;*/
+    border: .125em inset #8fc6ff; /* 2px */
     background: linear-gradient(#a2f7ff 25%, #d1fbff 100%);
-    border-radius: 5px;
+    border-radius: .313em; /*5px;*/
 }
 input:hover {
     background: #fff333;
@@ -57,13 +57,13 @@ input:focus {
 
 #submit {
     float: right;
-    margin: 50px 20px 10px 20px;
-    width: 100px;
-    height: 20px;
+    margin: 10% 4% 2% 4%; /*50px 20px 10px 20px;*/
+    width: 20%; /*100px;*/
+    height: 4%; /*20px;*/
     background: #33d956; /*linear-gradient(#33d956 0%, #66e380 100% ) ;*/
-    border: 2px solid #00d02c;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px #99ecab;
+    border: .125em solid #00d02c; /*2px*/
+    border-radius: .500em;/*8px*/
+    box-shadow: .063em .125em .063em #99ecab;/*1px 1px 2px*/
     -webkit-transition-property: background;
     -moz-transition-property: background;
     -ms-transition-property: background;

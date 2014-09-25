@@ -26,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3744" max-vertical-offset="5970">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="107" />
+            <state vertical-scroll-proportion="79.375" vertical-offset="5235" max-vertical-offset="5970">
+              <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="226" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -36,7 +36,7 @@
       <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74418604" vertical-offset="4708" max-vertical-offset="10920">
+            <state vertical-scroll-proportion="0.6976744" vertical-offset="4740" max-vertical-offset="10920">
               <caret line="348" column="4" selection-start-line="348" selection-start-column="4" selection-end-line="351" selection-end-column="26" />
               <folding />
             </state>
@@ -148,7 +148,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Week2_Project" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -321,15 +321,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3744" max-vertical-offset="5970">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="107" />
+        <state vertical-scroll-proportion="79.375" vertical-offset="5235" max-vertical-offset="5970">
+          <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="226" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74418604" vertical-offset="4708" max-vertical-offset="10920">
+        <state vertical-scroll-proportion="0.6976744" vertical-offset="4740" max-vertical-offset="10920">
           <caret line="348" column="4" selection-start-line="348" selection-start-column="4" selection-end-line="351" selection-end-column="26" />
           <folding />
         </state>

@@ -7,7 +7,7 @@ p {
     text-indent: 10px;
 }
 .wrapper {
-    background: #ffffff;
+    background: linear-gradient(#79add4 0%, #afcee5 60%, #cadeee 100% );
     width: 960px;
     margin: 0 auto;
     overflow: auto;
@@ -18,14 +18,13 @@ p {
 .headergroup {
     width: 960px;
     background: url("../img/BG960x470.jpg");
-    /*background: linear-gradient(#666666 0%, #333333 50%, #000000 100%);*/
     border: 1px solid #000000;
 }
 .mainnav {
     width: 960px;
 }
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 .mainnav h1 {
     text-align: center;
@@ -63,41 +62,90 @@ h1 {
 #slider {
     width: 640px;
     height: 250px;
-    border: 1px solid #000000;
+    border-style: outset;
+    border-radius: 10px;
     margin: 100px auto 40px auto;
-    background: #06ff00;
+}
+#slider img {
+    border: none;
+    border-radius: 10px;
 }
 
 /* End main header group styling */
 /* Main section of the page styling */
 
+.mainsidebar {
+    overflow: auto;
+    border-bottom-style: groove;
+}
 .sidebar {
     width: 200px;
     margin: 10px;
-    background-color: #eeeeee;
+    border-right-style: groove;
     float: left;
-    border: 1px solid #000000;
 }
 .sidebar h2, .main h2, #one h2, #two h2, #three h2 {
     text-align: center;
+}
+.sidebar ul {
+    padding: 10px 30px;
 }
 .sidebar ul li {
     display: block;
     padding-top: 10px;
 }
+.sidebar ul li a {
+    color: #333dc7;
+}
+.sidebar ul li a:hover {
+    color: #06ff00;
+}
+.sidebar ul li a:active {
+    color: #ffffff;
+}
 .main1 {
     width: 712px;
     margin: 10px;
-    background-color: #cccccc;
+    /*background-color: #cccccc;*/
     float: left;
     clear: right;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
 }
 
 .main1 p, .sidebar p {
     padding: 5px;
 }
 /* End main section styling */
+/* Video and Gallery Styling */
+.gallery {
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+img {
+    border-radius: 10px;
+}
+.gallery .left {
+    float: left;
+}
+.gallery .right {
+    float: left;
+    margin-left: 15px;
+
+}
+
+.video {
+    width: 560px;
+    float: left;
+    clear: right;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.video h2, .gallery h2 {
+    text-align: center;
+}
 
 /* Mid section styling */
 
@@ -106,8 +154,7 @@ h1 {
     height: 402px;
     position: relative;
     clear: both;
-    border: 1px solid #000000;/* Take out when complete */
-    /*background: #628cc7;*/
+    border-top-style: groove;
 }
 #one a, #two a, #three a {
     width: 100px;
@@ -134,8 +181,49 @@ figure {
     text-align: center;
 }
 img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+img:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+img {
     box-shadow: 1px 1px 3px #000000;
     border: 2px outset #000000;
+}
+.rotate {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 6s;
+    -moz-transition-duration: 6s;
+    -ms-transition-duration: 6s;
+    -o-transition-duration: 6s;
+    transition-duration: 6s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.rotate:hover {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
 }
 #one {
     position: absolute;
@@ -143,7 +231,6 @@ img {
     top: 0;
     left: 10px;
     width: 300px;
-    border: 1px solid #000000;/* Take out when complete */
 }
 #two {
     position: absolute;
@@ -151,7 +238,6 @@ img {
     top: 0;
     left: 330px;
     width: 300px;
-    border: 1px solid #000000; /* Take out when complete */
 }
 #three {
     position: absolute;
@@ -159,7 +245,6 @@ img {
     top: 0;
     left: 650px;
     width: 300px;
-    border: 1px solid #000000; /* Take out when complete */
 }
 /* End mid section styling */
 
@@ -167,6 +252,7 @@ img {
 
 .bottomnav {
     margin-top: 20px;
+    border-top-style: groove;
 }
 .colone ul li, .coltwo ul li, .colthree ul li, .colfour ul li {
     display: block;
