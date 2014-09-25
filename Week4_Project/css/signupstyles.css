@@ -2,6 +2,7 @@
 
 body {
     background: #030068;
+    font-size: 1em;
 }
 form * {
     background: transparent;
@@ -92,26 +93,83 @@ h3, p a {
 /* Media queries */
 @media screen and (min-width: 280px) and (max-width: 479px) {
     #myForm {
-        background: #00e79b;
+        width: 75.156576%;
+    }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+    .updates, .newsletter {
+        display: block;
+        clear: both;
+        margin-top: 0;
+    }
+    #updates, #newsletter {
+        margin-top: 5.555556%;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
     #myForm {
-        background: #ffffff;
+        width: 78.247261%;
+    }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+    .updates, .newsletter {
+        display: block;
+        clear: both;
+        margin: 0 ;
+    }
+    #updates, #newsletter {
+        margin-top: 5.555556%;
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
     #myForm {
-        background: #06ff00;
+        width: 65.189048%;
+    }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+    .updates, .newsletter {
+        display: block;
+        clear: both;
+        margin-top: 0;
+    }
+    #updates, #newsletter {
+        margin-top: 5.555556%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     #myForm {
-        background: #fff333;
+        width: 39.0625%;
     }
+    #submit {
+        width: 24%;
+    }
+    input {
+        width: 75%;
+    }
+    .updates, .newsletter {
+        display: block;
+        clear: both;
+        margin-top: 0;
+    }
+    #updates, #newsletter {
+        margin-top: 5.555556%;
+    }
+
 }
 
 
