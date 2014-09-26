@@ -73,7 +73,7 @@ h1 {
     border-radius: .625em; /*10px*/
     margin: 10.416667% auto 4.166667% auto;/*100px auto 40px auto;*/
 }
-#slider img {
+#slider.image {
     border: none;
     border-radius: .625em;/*10px*/
 }
@@ -81,15 +81,16 @@ h1 {
 /* End main header group styling */
 /* Main section of the page styling */
 
-.mainsidebar {
+.maincontent {
     overflow: auto;
     border-bottom-style: groove;
 }
 .sidebar {
     width: 20.833333%; /*200px;*/
     margin: 1.041667%; /*10px;*/
-    border-right-style: groove;
+    border-left-style: groove;
     float: left;
+    clear: right;
 }
 .sidebar h2, .main h2, #one h2, #two h2, #three h2 {
     text-align: center;
@@ -114,11 +115,10 @@ h1 {
     width: 74.166667%; /*712px;*/
     margin: 1.041667%; /*10px;*/
     float: left;
-    clear: right;
 }
 
 .main1 p, .sidebar p {
-    padding: 5px;
+    padding: .313em; /*5px*/
 }
 /* End main section styling */
 /* Video and Gallery Styling */
@@ -304,26 +304,314 @@ img {
 
 /* Media queries */
 @media screen and (min-width: 280px) and (max-width: 479px) {
+
     .wrapper {
+        border: none;
+        width: 103%;
+        margin: auto;
         background: #00e79b;
+    }
+    .headergroup .mainnav .pagenav ul{
+        text-align: left;
+    }
+    .headergroup {
+        width: 103%;
+    }
+    .pagenav {
+        margin-left: -40px;
+    }
+    .login {
+        align-content: center;
+    }
+    #slider {
+        width: 66.666667%; /*640px;*/
+        height: 15.625em; /*250px;*/
+        border-style: outset;
+        border-radius: .625em; /*10px*/
+        margin-left: -800%;/*100px auto 40px auto;*/
+    }
+    #slider.image {
+        border: none;
+        border-radius: .625em;/*10px*/
+        margin-left: -800%;
+    }
+    .main1 p, .sidebar p {
+        padding: .625em; /*10px*/
+    }
+    .main1 {
+        width: 100%; /*712px;*/
+        margin: 1.041667%; /*10px;*/
+        border-bottom-style: groove;
+    }
+    .sidebar {
+        width: 100%; /*200px;*/
+        margin: 1.041667%; /*10px;*/
+
+        border-left-style: none;
+
+    }
+    .sidebar ul {
+        padding-left: 35.5%;
+    }
+    .gallery .right, .gallery .left {
+        margin-left: .313em;
+
+    }
+    .gallery {
+        width: 100%; /*300px;*/
+        margin-bottom: 3.125%; /*30px;*/
+    }
+    .gallery .row1 {
+        float: left;
+    }
+
+    .gallery .row3, .gallery .row4, .gallery .row5, .gallery .row2 {
+        float: left;
+        clear: right;
+    }
+
+    .video {
+        width: 100%; /*560px;*/
+        margin-left: 0; /*40px;*/
+        margin-bottom: 3.125%; /*30px;*/
+    }
+    .bottomnav .foot .colone ul {
+        float: left;
+        padding-left: 31.298905%; /*150px 150/960;*/
+    }
+    .bottomnav .foot .coltwo ul {
+        float: left;
+        clear: right;
+        padding-left: 10.416667%; /*100px;*/
+    }
+    .bottomnav .foot .colthree ul {
+        float: left;
+        clear: both;
+        padding-left: 31.298905%; /*100px;*/
+    }
+    .bottomnav .foot .colfour ul {
+        float: left;
+        clear: right;
+        padding-left: 10.416667%; /*100px;*/
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
     .wrapper {
+        width: 100%;
         background: #ffffff;
+    }
+    .pagenav {
+        margin-left: 7.824726%;
+    }
+    .login {
+        align-content: center;
+    }
+    #slider {
+        width: 66.666667%; /*640px;*/
+        height: 15.625em; /*250px;*/
+        border-style: outset;
+        border-radius: .625em; /*10px*/
+        margin-left: -800%;/*100px auto 40px auto;*/
+    }
+    #slider.image {
+        border: none;
+        border-radius: .625em;/*10px*/
+        margin-left: -800%;
+    }
+    .main1 p, .sidebar p {
+        padding: .625em; /*10px*/
+    }
+    .main1 {
+        width: 100%; /*712px;*/
+        margin: 1.041667%; /*10px;*/
+        border-bottom-style: groove;
+    }
+    .sidebar {
+        width: 100%; /*200px;*/
+        margin: 1.041667%; /*10px;*/
+
+        border-left-style: none;
+
+    }
+    .sidebar ul {
+        padding-left: 35.5%;
+    }
+    .gallery .right, .gallery .left {
+        margin-left: .313em;
+
+    }
+    .gallery {
+        width: 100%; /*300px;*/
+        margin-bottom: 3.125%; /*30px;*/
+    }
+    .gallery .row1 {
+        float: left;
+    }
+
+    .gallery .row3, .gallery .row4, .gallery .row5, .gallery .row2 {
+        float: left;
+        clear: right;
+    }
+
+    .video {
+        width: 100%; /*560px;*/
+        margin-left: 0; /*40px;*/
+        margin-bottom: 3.125%; /*30px;*/
+    }
+    .bottomnav .foot .colone ul {
+        float: left;
+        padding-left: 31.298905%; /*150px 150/960;*/
+    }
+    .bottomnav .foot .coltwo ul {
+        float: left;
+        clear: right;
+        padding-left: 10.416667%; /*100px;*/
+    }
+    .bottomnav .foot .colthree ul {
+        float: left;
+        clear: both;
+        padding-left: 31.298905%; /*100px;*/
+    }
+    .bottomnav .foot .colfour ul {
+        float: left;
+        clear: right;
+        padding-left: 10.416667%; /*100px;*/
     }
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
     .wrapper {
+        width: 100%;
         background: #06ff00;
+    }
+    .headergroup {
+        width: 103%;
+    }
+    .pagenav {
+        margin-left: 7.824726%;
+    }
+    .login {
+        align-content: center;
+    }
+    #slider {
+        width: 66.666667%; /*640px;*/
+        height: 15.625em; /*250px;*/
+        border-style: outset;
+        border-radius: .625em; /*10px*/
+        margin-left: -800%;/*100px auto 40px auto;*/
+    }
+    #slider.image {
+        border: none;
+        border-radius: .625em;/*10px*/
+        margin-left: -800%;
+    }.main1 p, .sidebar p {
+         padding: .625em; /*10px*/
+     }
+    .main1 {
+        width: 100%; /*712px;*/
+        margin: 1.041667%; /*10px;*/
+        border-bottom-style: groove;
+    }
+    .sidebar {
+        width: 100%; /*200px;*/
+        margin: 1.041667%; /*10px;*/
+
+        border-left-style: none;
+
+    }
+    .sidebar ul {
+        padding-left: 35.5%;
+    }
+    .gallery .right, .gallery .left {
+        margin-left: .313em;
+
+    }
+    .gallery {
+        width: 100%; /*300px;*/
+        margin-bottom: 3.125%; /*30px;*/
+    }
+    .gallery .row1 {
+        float: left;
+    }
+
+    .gallery .row3, .gallery .row4, .gallery .row5, .gallery .row2 {
+        float: left;
+        clear: right;
+    }
+
+    .video {
+        width: 100%; /*560px;*/
+        margin-left: 0; /*40px;*/
+        margin-bottom: 3.125%; /*30px;*/
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1320px) {
     .wrapper {
+        width: 98%;
         background: #fff333;
+    }
+    .headergroup {
+        width: 100%;
+    }
+    .login {
+        float: left;
+        clear: right;
+        margin-left: 13.020833%;/*250px;*/
+
+    }
+    #slider {
+        width: 66.666667%; /*640px;*/
+        height: 15.625em; /*250px;*/
+        border-style: outset;
+        border-radius: .625em; /*10px*/
+        margin-left: -800%;/*100px auto 40px auto;*/
+    }
+    #slider.image {
+        border: none;
+        border-radius: .625em;/*10px*/
+        margin-left: -800%;
+    }
+    .main1 p, .sidebar p {
+        padding: .625em; /*10px*/
+    }
+    .main1 {
+        width: 100%; /*712px;*/
+        margin: 1.041667%; /*10px;*/
+        border-bottom-style: groove;
+    }
+    .sidebar {
+        width: 100%; /*200px;*/
+        margin: 1.041667%; /*10px;*/
+
+        border-left-style: none;
+
+    }
+    .sidebar ul {
+        padding-left: 35.5%;
+    }
+    .gallery .right, .gallery .left {
+        margin-left: .313em;
+
+    }
+    .gallery {
+        width: 100%; /*300px;*/
+        margin-bottom: 3.125%; /*30px;*/
+    }
+    .gallery .row1 {
+        float: left;
+    }
+
+    .gallery .row3, .gallery .row4, .gallery .row5, .gallery .row2 {
+        float: left;
+        clear: right;
+    }
+
+    .video {
+        width: 100%; /*560px;*/
+        margin-left: 0; /*40px;*/
+        margin-bottom: 3.125%; /*30px;*/
     }
 }
 
