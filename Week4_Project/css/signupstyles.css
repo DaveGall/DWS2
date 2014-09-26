@@ -3,6 +3,7 @@
 body {
     background: #030068;
     font-size: 1em;
+    font-family: Arial, Verdana, sans-serif;
 }
 form * {
     background: transparent;

@@ -1,6 +1,8 @@
 /* Login stylesheet */
 body {
     background-color: #030068;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 1em;
 }
 /* Main content styling */
 #wrapper {
