@@ -306,6 +306,9 @@ img {
     .headergroup {
         width: 103%;
     }
+    .headergroup .mainnav ul li {
+        margin: 0;
+    }
     .pagenav {
         margin-left: -40px;
     }
